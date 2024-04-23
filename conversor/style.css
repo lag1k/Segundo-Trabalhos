@@ -15,7 +15,6 @@ body{
     border: 2px solid black;
     background-color: rgb(249, 249, 249);
 }
-
 .mini{
     display: flex;
     flex-direction: column;
@@ -25,7 +24,6 @@ body{
     border: 2px solid black;
     background-color: lightgrey;
 }
-
 footer{
     position: fixed;
     bottom: 0;
@@ -39,7 +37,6 @@ footer{
     margin-top: 10px;
     margin-bottom: -10px;
 }
-
 @media only screen and (max-width: 1000px){
     .box{
         margin-top: 10%;
@@ -49,9 +46,7 @@ footer{
     #icon{
         width: 5%;
     }
-
 }
-
 @media only screen and (max-width: 600px){
     .box{
         margin-top: 20%;
@@ -65,7 +60,6 @@ footer{
         font-size: 11px;
     }
 }
-
 @media only screen and (max-width: 400px){
     .box{
         margin-top: 30%;
