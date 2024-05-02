@@ -10,7 +10,7 @@ function tempC() { // convert celsius
         return;
     } else {
         var celsius = (parseFloat(fahrenheit) - 32) * 5 / 9; //conversão cel
-        document.getElementById("resultado").innerText = "Celsius: " + parseFloat(celsius).toFixed(2); // dá o retorno e prende o valor em 2 casas decimais
+        document.getElementById("resultado").innerText = "Celsius: " + parseFloat(celsius).toFixed(2)+ "°"; // dá o retorno e prende o valor em 2 casas decimais
     }
 }
 
@@ -22,7 +22,7 @@ function tempF() { // convert fahrenheit
         return;
     } else {
         var fahrenheit = parseFloat(celsius) * 9 / 5 + 32; //conversão fahr
-        document.getElementById("resultado").innerText = "Fahrenheit: " + parseFloat(fahrenheit).toFixed(2);// dá o retorno e prende o valor em 2 casas decimais
+        document.getElementById("resultado").innerText = "Fahrenheit: " + parseFloat(fahrenheit).toFixed(2) + "°";// dá o retorno e prende o valor em 2 casas decimais
     }
 }
 

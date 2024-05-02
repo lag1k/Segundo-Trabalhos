@@ -1,0 +1,112 @@
+body{
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/564x/65/e2/0a/65e20aeab7d1b5e314d218a828c3b022.jpg);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.bx-p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 05%;
+    background-color: black;
+    width: 700px;
+    height: 700px;
+    padding: 10px;
+    border:dashed 2px white;
+    border-radius: 10px;
+}
+
+
+.bx-txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
+#tt{
+    margin-top: -10px;
+    color: white;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#sub-tt{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-top: -20px;
+    color: gray;
+}
+#texto{
+    width: 95%;
+    height: 400px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.bx-c{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#c-txt{
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#contador{
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#clear{
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 786px){
+    body{
+        zoom: 90%;
+        background-repeat: repeat;
+    }
+    .bx-p{
+        margin-top: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    body{
+        zoom: 60%;
+        background-repeat: repeat;
+    }
+    .bx-p{
+        margin-top: 10%;
+        width: 85%;
+        height: 1000px;
+    }
+
+    #tt{
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+        font-size: 60px;
+    }
+    #sub-tt{
+        font-size: 16px;
+        margin-top: -20px;
+    }
+    #texto{
+        height: 550px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
