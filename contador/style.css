@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    zoom: 90%;
 }
 .bx-p{
     display: flex;
@@ -14,7 +15,7 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    margin-top: 05%;
+    margin-top: 1%;
     background-color: black;
     width: 700px;
     height: 700px;
