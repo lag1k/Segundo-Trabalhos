@@ -11,3 +11,5 @@ function clear(){ // função de limpar a caixa de texto
     document.getElementById("contador").innerText = "0"; // coloca o contador para 0 dnv
 
 }
+ashdakshdk
+
