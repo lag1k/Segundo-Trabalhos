@@ -1,0 +1,185 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(photos/bg.png);
+}
+
+.header {
+    background-color: #fae6db;
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.6px solid black;
+    margin-top: 56px;
+    margin-bottom: 60px;
+}
+
+.logo_img{
+    scale: 40%;
+}
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu-toggle button {
+    background-color: transparent;
+    border: none;
+    color: rgba(50,43,54,255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Adicione o estilo para o menu deslizante */
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Esconder o menu inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #fae6db;
+    color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    border: 2px solid black;
+    z-index: 1000;
+}
+
+.menu.show{
+    display: inherit;
+    right: 0; /* Mostrar o menu quando a classe 'show' é aplicada */
+}
+
+.menu #close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    z-index: 1000;
+}
+
+.tt{
+    text-align: center;
+    font-family:cursive;
+    background-color: #e9e9e9;
+    border: 2px black dashed;
+    margin-bottom: 0px;
+}
+.produtos_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9e9e9;
+    border: 2px black dashed;
+    border-top: none;
+    height: 400px;
+    padding: 10px;
+    position: relative; /* Adicionando position:relative */
+    z-index: 1; /* Definindo z-index para os produtos */
+}
+.produtos:hover {
+    animation: pulo 0.5s ease forwards; /* Inicia a animação quando o mouse estiver sobre o elemento */
+}
+
+@keyframes pulo {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.produtos_img{
+    scale: 70%;
+    margin-left: -50px;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e9;
+    border: 2px black dashed;
+    height: 400px;
+    padding: 10px;
+    position: relative; /* Adicionando position:relative */
+    z-index: 1; /* Definindo z-index para os produtos */
+}
+.item {
+    margin-bottom: 10px;
+}
+
+.item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+.info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9e9e9;
+    border: 2px black dashed;
+    border-top: none;
+    height: 400px;
+    padding: 10px;
+    position: relative; /* Adicionando position:relative */
+    z-index: 1; /* Definindo z-index para os produtos */
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.info label {
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    
+}

@@ -1,0 +1,61 @@
+<<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Cabeçalho</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <header class="header">                             <!-- Cabeçario-->
+        <a href="../index.html"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
+        <div class="menu-toggle" id="menu-toggle">
+            <button>&#9776;</button>
+        </div>
+    </header>
+    
+    <div class="menu" id="menu">                        <!-- Menu lateral-->
+        <button id="close-menu">&times;</button>
+        <br><br>
+    
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div> <br>
+    
+        <a href="../index.html" class="menu_itens">Início</a>
+        <a href="#" class="menu_itens">Produtos</a>
+        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
+        <a href="../pags/produtos-2.html" class="menu_itens">Venda aqui</a>
+        <a href="#" class="menu_itens">Sobre</a>
+    </div>
+
+    <h1 class=" tt">BEM-VINDO A NOSSA CASA DE BONECAS </h1>
+    
+    <div id="user-info" class="info-container">
+        <h2>Informações do Usuário</h2>
+        <div class="info">
+            <label for="name">Nome:</label>
+            <p id="name">João da Silva</p>
+        </div>
+        <div class="info">
+            <label for="email">Email:</label>
+            <p id="email">joao.silva@email.com</p>
+        </div>
+        <div class="info">
+            <label for="address">Endereço:</label>
+            <p id="address">Rua A, 123 - Bairro Central</p>
+        </div>
+        <div class="info">
+            <label for="phone">Telefone:</label>
+            <p id="phone">(11) 91234-5678</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
