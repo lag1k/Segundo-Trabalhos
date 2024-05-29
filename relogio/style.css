@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-top: solid px #333;
+    border-bottom: solid 5px #333;
+    font-size: 25px;
+}
+
+
+#relogio{
+    font-size: 3em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#data{
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#tudo{
+    width: 300px;
+    margin-top: 300px; 
+    color: rgb(255, 255, 255);
+    border: solid 2px white;
+    background-color: #0a0a0a;
+    border-radius: 100px;
+    padding: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;    
+    position: fixed;
+    bottom: 0;
+}
+.ft-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+}   
+.ft-img{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 1024px){
+    body{
+        background-size: 100%;
+        background-position: center 70px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background-size: 150%;
+        background-repeat: repeat-y;
+        background-position: center 10px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+   body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+    top: 200px;
+   }
+   header{
+    font-size: 20px;
+    }
+   #tudo{
+    font-size: 15px;
+   }
+}
+
+@media only screen and (max-width: 375px){
+    header{
+        font-size: 15px;
+    }
+    body{
+        background-repeat: repeat-y;
+    }
+}
