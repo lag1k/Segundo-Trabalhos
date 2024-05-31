@@ -20,36 +20,21 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Você pesquisou por: " + searchTerm);
     });
 
-    const formRoupa = document.getElementById('form-roupa');
-    const produtosContainer = document.getElementById('produtos');
+});
 
-    formRoupa.addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-        
-        const tamanho = document.getElementById('tamanho').value;
-        const descricao = document.getElementById('descricao').value;
-        const valor = parseFloat(document.getElementById('valor').value);
-        const imagem = document.getElementById('imagem').files[0]; // Obtém o arquivo de imagem selecionado pelo usuário
+const trocaButtons = document.querySelectorAll('#troca');
 
-        const novoProduto = criarProduto(tamanho, descricao, valor, imagem);
-        produtosContainer.appendChild(novoProduto);
+    trocaButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const cadDiv = document.getElementById('cad');
+            const logDiv = document.getElementById('log');
 
-        // Limpar o formulário
-        formRoupa.reset();
+            if (cadDiv.style.display === "none") {
+                cadDiv.style.display = "block";
+                logDiv.style.display = "none";
+            } else {
+                cadDiv.style.display = "none";
+                logDiv.style.display = "block";
+            }
     });
-
-    function criarProduto(tamanho, descricao, valor, imagem) {
-        const produto = document.createElement('div');
-        produto.classList.add('produto');
-        
-        const infoProduto = document.createElement('p');
-        infoProduto.textContent = `${tamanho} - ${descricao} - R$ ${valor.toFixed(2)}`;
-        
-        const imagemProduto = document.createElement('img');
-        imagemProduto.src = URL.createObjectURL(imagem); // Exibir a imagem selecionada pelo usuário
-        
-        produto.appendChild(infoProduto);
-        produto.appendChild(imagemProduto); // Adicionar a imagem ao produto
-        return produto;
-    }
 });

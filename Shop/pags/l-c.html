@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra de Cabeçalho</title>
-    <link rel="icon shortcut" href="../photos/DoolShop.png">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="icon shortcut" href="../photos/DoolShop.png">
 </head>
 
 <body>
@@ -37,40 +37,63 @@
 
     <br>
 
-    <h1 class=" tt">ADICIONE SUA ROUPINHA A VENDA AQUI: </h1>
-    <div id="formulario" class="item">
-        <h2>Adicionar Nova Peça de Roupa</h2>
-        <form id="form-roupa">
-    
-            <div class="item">
-                <label for="imagem">Imagem:</label>
-                <input type="file" id="imagem" accept="image/*" required>
+    <div id="cad">
+        <h1 class=" tt">FAÇA SEU CADASTRO </h1>
+        <div id="user-info" class="l-c-container">
+            <h2>Informações do Usuário</h2>
+            <div class="info">
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
             </div>
-    
-            <div class="item">
-                <label for="titulo">Título:</label>
-                <input type="text" id="titulo" required>
+            <div class="info">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
             </div>
-    
-            <div class="item">
-                <label for="tamanho">Tamanho:</label>
-                <input type="text" id="tamanho" required>
+            <div class="info">
+                <label for="email">Senha:</label>
+                <input type="text" id="email">
             </div>
-    
-            <div class="item">
-                <label for="descricao">Descrição:</label>
-                <input type="text" id="descricao" required>
+            <div class="info">
+                <label for="email" style="margin-left: -75px;">Confirmar Senha:</label>
+                <input type="text" id="email">
             </div>
-    
-            <div class="item">
-                <label for="valor">Valor:</label>
-                <input type="number" id="valor" required>
+            <div class="info" style="margin-left: -20px;">
+                <label for="address">Endereço:</label>
+                <input type="text" id="address">
             </div>
-    
-            <button type="submit">Adicionar</button>
-        </form>
+            <div class="info" style="margin-left: -15px;">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone">
+            </div>
+            <button id="troca">Registrar</button>
+
+            <br><br>
+            <h4>Já tem conta? Faça seu login.</h4>
+            <button id="troca">Login</button>
+            <br><br>
+        </div>
     </div>
-    
+
+    <div id="log">
+        <h1 class=" tt">FAÇA SEU LOGIN </h1>
+        <div id="user-info" class="l-c-container">
+            <h2>Informações do Usuário</h2>
+            <div class="info">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+            </div>
+            <div class="info">
+                <label for="email">Senha:</label>
+                <input type="text" id="email">
+            </div>
+            <a href="../pags/perfil.html"><button>Entrar</button></a>
+
+            <br><br>
+            <h4>Ainda não tem conta? Faça seu Cadastro.</h4>
+            <button id="troca">Registro</button>
+            <br><br>
+        </div>
+    </div>
     <h1 class="tt" style="margin-top: 100px; margin-bottom: -50px;"><a href="#header" id="links">VOLTAR AO TOPO</a></h1>     <!--Intro Site-->
 
     <footer id="ft">
@@ -90,7 +113,7 @@
         <br>
     </footer>
 
-    <script src="../script.js"></script>                       <!--Load_JS-->
+    <script src="../script.js"></script>
 </body>
 
 </html>
