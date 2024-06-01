@@ -4,35 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de Cabeçalho</title>
+    <title>Login/Cadastro</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon shortcut" href="../photos/DoolShop.png">
+    <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
 </head>
 
 <body>
 
-    <br id="header">
-    <header class="header">                             <!-- Cabeçario-->
-        <a href="../index.html"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
-        <div class="menu-toggle" id="menu-toggle">
-            <button>&#9776;</button>
+    <header class="header" id="false">                                     <!-- Cabeçario-->
+        <a href="../index.html" id="logo"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
+        
+    </header>
+
+    <header class="header" id="true">                                     <!-- Cabeçario-->
+        <button id="back-button" ><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>        
+        <div class="burger-icon">
+            <label class="burger" for="burger">
+              <input class="line" type="checkbox" id="burger" />
+            </label>
         </div>
     </header>
     
-    <div class="menu" id="menu">                        <!-- Menu lateral-->
-        <button id="close-menu">&times;</button>
+    <div class="menu" id="menu">                               <!--Menu lateral-->
         <br><br>
-    
-        <div class="search">
-            <input type="text" placeholder="Pesquisar...">
-            <button>Buscar</button>
-        </div> <br>
-    
         <a href="../index.html" class="menu_itens">Início</a>
         <a href="../pags/produtos.html" class="menu_itens">Produtos</a>
         <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
         <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
         <a href="../pags/add.html" class="menu_itens">Venda aqui</a>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button">Buscar</button>
+            <div id="search-results">
+                <!-- Aqui serão exibidos os resultados da pesquisa -->
+            </div>
+        </div>
     </div>
 
     <br>
@@ -53,10 +59,6 @@
                 <label for="email">Senha:</label>
                 <input type="text" id="email">
             </div>
-            <div class="info">
-                <label for="email" style="margin-left: -75px;">Confirmar Senha:</label>
-                <input type="text" id="email">
-            </div>
             <div class="info" style="margin-left: -20px;">
                 <label for="address">Endereço:</label>
                 <input type="text" id="address">
@@ -64,12 +66,12 @@
             <div class="info" style="margin-left: -15px;">
                 <label for="phone">Telefone:</label>
                 <input type="text" id="phone">
-            </div>
-            <button id="troca">Registrar</button>
+            </div> <br>
+            <button class="button" id="troca" style="font-size: 16px;">Registrar</button>
 
-            <br><br>
+            <br>
             <h4>Já tem conta? Faça seu login.</h4>
-            <button id="troca">Login</button>
+            <button class="button" id="troca" style="font-size: 16px;">Login</button>
             <br><br>
         </div>
     </div>
@@ -85,16 +87,15 @@
             <div class="info">
                 <label for="email">Senha:</label>
                 <input type="text" id="email">
-            </div>
-            <a href="../pags/perfil.html"><button>Entrar</button></a>
+            </div><br>
+            <a href="../pags/perfil.html"><button class="button" style="font-size: 16px;">Entrar</button></a>
 
-            <br><br>
+            <br>
             <h4>Ainda não tem conta? Faça seu Cadastro.</h4>
-            <button id="troca">Registro</button>
+            <button  class="button" id="troca" style="font-size: 16px;">Registro</button>
             <br><br>
         </div>
     </div>
-    <h1 class="tt" style="margin-top: 100px; margin-bottom: -50px;"><a href="#header" id="links">VOLTAR AO TOPO</a></h1>     <!--Intro Site-->
 
     <footer id="ft">
         <br><br><br>

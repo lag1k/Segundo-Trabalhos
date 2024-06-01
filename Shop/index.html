@@ -4,83 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doll House</title>
+    <title>Início</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon shortcut" href="photos/DoolShop.png">
+    <link rel="icon shortcut" href="photos/DoolShop-removebg-preview.png">
 </head>
 
 <body>
 
-    <br id="header">
-    <header class="header">                                     <!-- Cabeçario-->
+    <p id="header"></p>
+    
+    <header class="header" id="false">                                     <!-- Cabeçario-->
         <a href="index.html" id="logo"><img src="photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
-        <div class="menu-toggle" id="menu-toggle">
-            <button>&#9776;</button>
-        </div>
+        
     </header>
 
+    <header class="header" id="true">                                     <!-- Cabeçario-->
+        <button id="back-button" ><img src="photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>
+        
+        <p class="tt-2">BEM-VINDO A NOSSA CASA DE BONECAS </p>
+
+
+        <div class="burger-icon">
+            <label class="burger" for="burger">
+              <input class="line" type="checkbox" id="burger" />
+            </label>
+        </div>
+          
+    </header>
+    
+    
     <div class="menu" id="menu">                               <!--Menu lateral-->
-        <button id="close-menu">&times;</button><br><br>
-
-        <div class="search">
-            <input type="text" placeholder="Pesquisar...">
-            <button>Buscar</button>
-        </div><br>
-
+        <br><br>
         <a href="index.html" class="menu_itens">Início</a>
         <a href="pags/produtos.html" class="menu_itens">Produtos</a>
         <a href="pags/l-c.html" class="menu_itens">Login/Cadastro</a>
         <a href="pags/perfil.html" class="menu_itens">Perfil</a>
         <a href="pags/add.html" class="menu_itens">Venda aqui</a>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button">Buscar</button>
+            <div id="search-results">
+                <!-- Aqui serão exibidos os resultados da pesquisa -->
+            </div>
+        </div>
     </div>
 
     <br>
 
-    <h1 class=" tt">BEM-VINDO A NOSSA CASA DE BONECAS </h1>     <!--Intro Site-->
-    <div class="produtos_box" style="flex-direction: column; padding: 50px;">
-        <div style="align-content: center; width: auto; display: flex; flex-direction: column; align-items: center; margin-top: -35px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-            <h1 style="font-size: 70px;">Doll House</h1> <hr style="width: 100%; margin-top: -40px; margin-bottom: 30px">
-            <p style="font-size: 20px;">Sua Loja Online de Roupas Infantis para Meninas. Encantando a Infância com Estilo </p><br>
-            <p style="text-align: justify; font-size: 17px;">
-                A Doll House busca ser a marca preferida de roupas infantis para meninas, combinando moda, qualidade e conforto. <br> Nossa visão é criar uma experiência de compra mágica tanto para as meninas quanto para seus pais, oferecendo peças que encantam e duram. Nossa missão é trazer alegria e conforto às meninas através de roupas encantadoras e práticas. Cada peça é cuidadosamente desenhada para refletir a personalidade e a imaginação das meninas, proporcionando uma combinação perfeita de estilo e funcionalidade. <br><br>
-                Caso queira voltar para a aba incial basta apertar na logo do site. <br>
-                Para poder comprar em nosso site lembre-se de ir na aba de <a href="pags/l-c.html" id="links">Login/Cadastro</a> e entrar ou criar sua conta. <br>
-                Se seu cadastro estiver feito de maneira correta vc ira para a aba de login e pós realizalo vc irá para o seu perfilcom suas informações. <br><br>
-                <b>Público-Alvo:</b> Meninas de 0 a 5 anos.
-            </p>
+         <!--Intro Site-->
+    <div class="info-content" style="font-size: 20px;">
+        <div class="produtos_box" id="div1">
+                <h1 style="font-size: 70px;">Doll House</h1> <hr style="width: 100%; margin-top: -40px; margin-bottom: 30px">
+                <p style="font-size: 20px;">Sua Loja Online de Roupas Infantis para Meninas. Encantando a Infância com Estilo </p><br>
+                <p style="text-align: justify; font-size: 20px;">
+                    A Doll House busca ser a marca preferida de roupas infantis para meninas, combinando moda, qualidade e conforto. <br> 
+                    Nossa visão é criar uma experiência de compra mágica tanto para as meninas quanto para seus pais, oferecendo peças que encantam e duram. <br> Nossa missão é trazer alegria e conforto às meninas através de roupas encantadoras e práticas. <br>
+                    Cada peça é cuidadosamente desenhada para refletir a personalidade e a imaginação das meninas, proporcionando uma combinação perfeita de estilo e funcionalidade. <br>
+                    Apenas Lembrando que nosso site é um site de encomenda, ou seja, nossa equipe irá eceber seu pedido e irá produzi-lo quando confirmado o pagamento. <br><br>
+                
+                    Caso queira voltar basta apertar na logo do site. <br>
+                    Para poder comprar em nosso site lembre-se de ir na aba de <a href="pags/l-c.html" id="links">Login/Cadastro</a> e entrar ou criar sua conta. <br>
+                    Se seu cadastro estiver feito de maneira correta vc ira para a aba de login e pós realizalo vc irá para o seu perfilcom suas informações. <br><br>
+                    <b>Público-Alvo:</b> Meninas de 0 a 5 anos.
+                    <br><br><br><br>        
+                </p>
+        </div>
+            <div class="produtos_box" style="border-top: 2px dashed #000; flex-direction: column;">
+                <h1>Categorias de Produtos:</h1><br><br> 
+                <div><a href="pags/produtos.html" id="links" class="box"><h3>Vestidos</h3></a><p>De festa, casuais e para ocasiões especiais, <br> sempre com designs únicos e materiais de alta qualidade.</p></div><br><br>
+                <div><a href="pags/produtos.html#conjuntos" id="links" class="box"><h3>Conjuntos:</h3></a><p>Looks completos para facilitar a escolha dos pais, <br> com combinações de peças que se complementam.</p></div><br><br>
+                <div><a href="pags/produtos.html#pijamas" id="links" class="box"><h3>Pijamas:</h3></a><p>Confortáveis e fofos, feitos <br> para garantir uma boa noite de sono.</p></div><br><br>
+                <div><a href="pags/produtos.html#acessorios" id="links" class="box"><h3>Acessórios:</h3></a><p>Tiaras, meias, bolsas e mais, <br> para completar o visual das pequenas.</p></div><br><br>
+                <div><a id="links" href="pags/produtos.html" style="font-size: 18px;" class="box"> → Aperte aqui ou nos nomes para ver os produtos. ←</a> <br><br><br>  </div>
+            </div>
+            <div class="produtos_box" style="flex-direction: column;">
+                <h1>Diferenciais dos Produtos:</h1><br><br> 
+                <div><h3>Design Exclusivo:</h3><p> Cada coleção é desenvolvida por designers talentosos, <br> trazendo tendências internacionais adaptadas ao universo infantil.</p></div><br><br>
+                <div><h3>Materiais de Qualidade:</h3><p>Usamos apenas tecidos confortáveis e duráveis, <br> garantindo que as roupas sejam agradáveis de usar e durem bastante.</p></div><br><br>
+                <div><h3>Conforto e Praticidade:</h3><p>Nossas peças são pensadas para permitir a <br> liberdade de movimento e a facilidade de vestir e cuidar.</p></div><br><br>
+                <div><h3>Produção:</h3><p>Cada peça é projetada com o cuidado do meio ambiente em mente, <br> utilizando materiais orgânicos e práticas de fabricação éticas.</p></div>
+            </div>
+        
+
+        <div class="produtos_box">
+                <h1>Experiencia do Cliente:</h1><br><br>  
+                <p style="text-align: justify; font-size: 20px;">
+                    <b>Atendimento ao Cliente:</b> Oferecemos suporte via chat, e-mail e telefone para resolver qualquer dúvida ou problema rapidamente. <br><br>
+                    <b>Política de Devolução:</b> Facilitamos trocas e devoluções sem complicações, garantindo que os clientes fiquem completamente satisfeitos com suas compras. <br><br>
+                    <b>Embalagem:</b> Nossas embalagens são cuidadosamente preparadas para que cada entrega pareça um presente especial, encantando tanto as crianças quanto os pais. <br><br>
+                </p> 
         </div>
     </div>
-
-    <div class="info-content" style="font-size: 17px;">           <!--Links and desc-->
-        <div class="produtos_box" style="float: left; align-items: center; flex-direction: column; justify-content: flex-start; text-align: center; height: auto; width: 50%;">
-            <h1>Categorias de Produtos:</h1><br><br> 
-            <div><a href="pags/produtos.html#vestidos" id="links"><h3>Vestidos</h3></a><p>De festa, casuais e para ocasiões especiais, sempre com designs únicos e materiais de alta qualidade.</p></div><br><br>
-            <div><a href="pags/produtos.html#conjuntos" id="links"><h3>Conjuntos:</h3></a><p>Looks completos para facilitar a escolha dos pais, com combinações de peças que se complementam.</p></div><br><br>
-            <div><a href="pags/produtos.html#pijamas" id="links"><h3>Pijamas:</h3></a><p>Confortáveis e fofos, feitos para garantir uma boa noite de sono.</p></div><br><br>
-            <div><a href="pags/produtos.html#acessorios" id="links"><h3>Acessórios:</h3></a><p>Tiaras, meias, bolsas e mais, para completar o visual das pequenas.</p></div><br><br>
-            <div><a id="links" href="pags/produtos.html" style="font-size: 18px;"> → Aperte aqui ou nos nomes para ver os produtos. ←</a></div>
-        </div>
-        <div class="produtos_box" style="float: right; align-items: center; flex-direction: column; justify-content: flex-start; text-align: center; height: auto; width: 50%;">
-            <h1>Diferenciais dos Produtos:</h1><br><br> 
-            <div><h3>Design Exclusivo:</h3><p> Cada coleção é desenvolvida por designers talentosos, trazendo tendências internacionais adaptadas ao universo infantil.</p></div><br><br>
-            <div><h3>Materiais de Qualidade:</h3><p>Usamos apenas tecidos confortáveis e duráveis, garantindo que as roupas sejam agradáveis de usar e durem bastante.</p></div><br><br>
-            <div><h3>Conforto e Praticidade:</h3><p>Nossas peças são pensadas para permitir a liberdade de movimento e a facilidade de vestir e cuidar.</p></div>
-        </div>
-    </div>
-
-    <div class="produtos_box" style="flex-direction: column; padding: 40px;">
-        <div style="align-content: center; width: auto; display: flex; flex-direction: column; align-items: center; margin-top: -35px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-            <h1>Experiencia do Cliente:</h1><br><br>  
-            <p style="text-align: justify; font-size: 17px;">
-                <b>Atendimento ao Cliente:</b> Oferecemos suporte via chat, e-mail e telefone para resolver qualquer dúvida ou problema rapidamente. <br><br>
-                <b>Política de Devolução:</b> Facilitamos trocas e devoluções sem complicações, garantindo que os clientes fiquem completamente satisfeitos com suas compras. <br><br>
-                <b>Embalagem:</b> Nossas embalagens são cuidadosamente preparadas para que cada entrega pareça um presente especial, encantando tanto as crianças quanto os pais. <br><br>
-            </p> 
-        </div>
-    </div>
-
-    <h1 class="tt" style="margin-top: 100px; margin-bottom: -50px;"><a href="#header" id="links">VOLTAR AO TOPO</a></h1>     <!--Intro Site-->
-
+    
     <footer id="ft">
         <br><br><br>
 

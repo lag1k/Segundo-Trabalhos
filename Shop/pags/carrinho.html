@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda Aqui</title>
+    <title>Carrinho</title>
     <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -43,55 +43,20 @@
 
     <br>
 
-    <h1 class=" tt">ADICIONE SUA ROUPINHA A VENDA AQUI: </h1>
-    <div id="formulario" class="item" style="font-size: 20px;">
-        <h2>Adicionar Nova Peça de Roupa</h2>
-        <form id="form-roupa" onsubmit="adicionarItem(event)">
-            
-            <div class="item">
-                <label for="imagem"><b>Imagem:</b></label>
-                <input type="file" id="imagem" accept="image/*" required>
-            </div>
     
-            <div class="item">
-                <label for="titulo"><b>Título:</b></label>
-                <input type="text" id="titulo" required>
-            </div>
-    
-            <div class="item">
-                <label for="tamanho"><b>Tamanho:</b></label>
-                <input type="text" id="tamanho" required>
-            </div>
-    
-            <div class="item">
-                <label for="descricao"><b>Descrição:</b></label>
-                <textarea name="" id="descricao" required></textarea>
-            </div>
-    
-            <div class="item">
-                <label for="valor"><b>Valor:</b></label>
-                <input type="number" id="valor" required>
-            </div>
-
-            <div class="item">
-                <label for="lista"><b>Lista:</b></label>
-                <select id="lista" required>
-                    <option value="vestidos">Vestidos</option>
-                    <option value="conjuntos">Conjuntos</option>
-                    <option value="pijamas">Pijamas</option>
-                    <option value="acessorios">Acessórios</option>
-
-                    <!-- Adicione mais opções conforme necessário -->
-                </select>
-            </div>
-    
-            <button type="submit" class="button">Adicionar</button>
-        </form>
+    <h1 class="tt">Itens no Carrinho</h1>
+    <div class="produtos_box" style="flex-direction: column;">
+        <main>
+            <ul id="carrinho">
+                <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+                
+            </ul>
+            <br><br>
+            <button id="clear-cart" class="button">Limpar Carrinho</button> <!-- Botão para limpar o carrinho -->
+            <br><br>    
+        </main>
     </div>
     
-    <div id="lista">
-        <!-- Os novos itens serão adicionados aqui -->
-    </div>
 
     <footer id="ft">
         <br><br><br>

@@ -4,83 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doll House</title>
+    <title>Produtos</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon shortcut" href="../photos/DoolShop.png">
+    <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
 
 </head>
 
 <body>
 
-    <br id="header">
-    <header class="header">                             <!-- Cabeçario-->
-        <a href="../index.html"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
-        <div class="menu-toggle" id="menu-toggle">
-            <button>&#9776;</button>
+    <header class="header" id="false">                                     <!-- Cabeçario-->
+        <a href="../index.html" id="logo"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
+        
+    </header>
+
+    <header class="header" id="true">                                     <!-- Cabeçario-->
+        <button id="back-button" ><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>        
+        <div class="burger-icon">
+            <label class="burger" for="burger">
+              <input class="line" type="checkbox" id="burger" />
+            </label>
         </div>
     </header>
     
-    <div class="menu" id="menu">                        <!-- Menu lateral-->
-        <button id="close-menu">&times;</button>
+    <div class="menu" id="menu">                               <!--Menu lateral-->
         <br><br>
-    
-        <div class="search">
-            <input type="text" placeholder="Pesquisar...">
-            <button>Buscar</button>
-        </div> <br>
-    
         <a href="../index.html" class="menu_itens">Início</a>
         <a href="../pags/produtos.html" class="menu_itens">Produtos</a>
         <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
         <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
         <a href="../pags/add.html" class="menu_itens">Venda aqui</a>
+
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button">Buscar</button>
+            <div id="search-results"></div>
+        </div>
+    </div>
+
+    <br>
+    <div class="info-content" style="font-size: 20px;">
+    <h1 class="produtos_box" style="margin-bottom: 0px;" >- VESTIDOS -</h1>
+    <div class="produtos_box" id="vestidos" style="font-size: 20px;">
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Bebê_Acabamento_de_babados_Maiô___Bordado_de_desenho_animado_Desenho_3D_ouvidos_Vestido_geral-removebg-preview.png" alt="Vestido com Manga Bordado Ursinho."></a><p id="nome" style="text-align: center;">Vestido com Manga Bordado Ursinho</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Babado_Folhado_Botões_na_frente_Simples_Boho_Vestido_Infantil_para_Menina-removebg-preview.png" alt="Vestido Folhado Botões Dourados."></a><p id="nome" style="text-align: center;">Vestido Folhado Botões Dourados</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/c9e23b8d-4dcd-488d-814a-590ca3e456cb-removebg-preview.png" alt="Vestidinho de Morangos."></a><p id="nome" style="text-align: center;">Vestidinho de Morangos</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Meninas_Pequenas_Shirt_sólido___nó_botão_frontal_Vestido_cami-removebg-preview.png" alt="Vestido Estilo Macacão com Camisa."></a><p id="nome" style="text-align: center;">Vestido Estilo Macacão com Camisa</p></div>
+    </div>
+
+    <br>
+    <h1 class="produtos_box" style="margin-bottom: 0px;" >- Conjuntos -</h1>
+    <div class="produtos_box" id="conjuntos" style="font-size: 20px;">
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Blenda_-_Roupas_-_Vestidos_compridos-removebg-preview.png" alt="Conjunto Pompom."></a><p id="nome" style="text-align: center;">Conjunto Pompom</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Bloco_de_cores_Coração_ocasional_Roupa_de_2pçs_Infantil_para_Menina-removebg-preview.png" alt="Conjuntinho de Coração."></a><p id="nome" style="text-align: center;">Conjuntinho de Coração</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Conjunto_2pçs_Brandili_Curto_Infantil_Morangos_Amarelo_Branco-removebg-preview.png" alt="Conjuntinho de Morangos."></a><p id="nome" style="text-align: center;">Conjuntinho de Morangos</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Meninas_da_Criança_Manga_gigot_Camiseta___Impressão_houndstooth_Saias-removebg-preview.png" alt="Conjunto Jovem Bebê."></a><p id="nome" style="text-align: center;">Conjunto Jovem Bebê</p></div>
     </div>
 
     <br>
 
-    <h1 class=" tt" id="vestidos">- VESTIDOS -</h1>
-    <div class="produtos_box">
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Bebê_Acabamento_de_babados_Maiô___Bordado_de_desenho_animado_Desenho_3D_ouvidos_Vestido_geral-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Babado_Folhado_Botões_na_frente_Simples_Boho_Vestido_Infantil_para_Menina-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/c9e23b8d-4dcd-488d-814a-590ca3e456cb-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Meninas_Pequenas_Shirt_sólido___nó_botão_frontal_Vestido_cami-removebg-preview.png" alt=""></a></div>
+    <h1 class="produtos_box" style="margin-bottom: 0px;" >- Pijamas -</h1>
+
+    <div class="produtos_box" id="pijamas" style="font-size: 20px;">
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/60_Ideias_De_Mairla_Em_2021__A14-removebg-preview.png" alt="Pijaminha de Bolinha."></a><p id="nome" style="text-align: center;">Pijaminha de Bolinha</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/garotas_Conjunto_de_pijama_estampas_de_borboletas_tubulação_de_contraste-removebg-preview.png" alt="Pijaminha de Borboleta."></a><p id="nome" style="text-align: center;">Pijaminha de Borboleta</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/garotas_Conjunto_de_pijama_impressão_de_letras_tubulação_de_contraste_cetim-removebg-preview.png" alt="Pijaminha Premium."></a><p id="nome" style="text-align: center;">Pijaminha Premium</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Meninos_da_Criança_Conjunto_de_pijama_Padrão_de_urso_e_letra_Tubulação_de_contraste_Cetim-removebg-preview.png" alt="Pijaminha de Cachorrinho."></a><p id="nome" style="text-align: center;">Pijaminha de Cachorrinho</p></div>
     </div>
 
     <br>
 
-    <h1 class=" tt" id="conjuntos">- CONJUNTOS -</h1>
-    <div class="produtos_box" >
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Blenda_-_Roupas_-_Vestidos_compridos-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Bloco_de_cores_Coração_ocasional_Roupa_de_2pçs_Infantil_para_Menina-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Conjunto_2pçs_Brandili_Curto_Infantil_Morangos_Amarelo_Branco-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Meninas_da_Criança_Manga_gigot_Camiseta___Impressão_houndstooth_Saias-removebg-preview.png" alt=""></a></div>
+    <h1 class="produtos_box" style="margin-bottom: 0px;" >- Aessórioss -</h1>
+
+    <div class="produtos_box" id="acessorios" style="font-size: 20px;">
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Meninas_da_Criança_4_pares_meias_de_tripulação_Coelho___Padrão_de_Cenoura_Difuso-removebg-preview.png" alt="4 Pares de Meia de Coelinho."><p id="nome" style="text-align: center;"></p>4 Pares de Meia de Coelinho</a></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Kit_3_Pares_Meias_Infantil_Estampada_Marisa-removebg-preview.png" alt="3 Pares de Meias Arco-Íris."></a><p id="nome" style="text-align: center;">3 Pares de Meias Arco-Íris</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Chapéu_balde_infantil_com_estampa_de_cereja-removebg-preview.png" alt="Bucket Rosa Cereja."></a><p id="nome" style="text-align: center;">Bucket Rosa Cereja</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/Boné_de_beisebol_gráfico_de_desenho_animado_infantil-removebg-preview.png" alt="Boné Glitter Ursinho."></a><p id="nome" style="text-align: center;">Boné Glitter Ursinho</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/42234b5f-e09f-4b03-a1ca-7addff64afd6-removebg-preview.png" alt="Óculos de Sól Coração."></a><p id="nome" style="text-align: center;">Óculos de Sól Coração</p></div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/4pairs_Girls_Gamepad_Brincos-removebg-preview.png" alt="Brincos Gamer"></a><p id="nome" style="text-align: center;"></p>Brincos Gamer</div>
+        <div class="produtos"><a href="fazendo_pedido.html" id="produtos"><img class="produtos_img" id="img" src="../photos/garotas_8_peças_Grampos_para_cabelo_decoração_de_arco-removebg-preview.png" alt="4 Pares de Lacinhos"></a><p id="nome" style="text-align: center;">4 Pares de Lacinhos</p></div>
     </div>
-
-    <br>
-
-    <h1 class=" tt" id="pijamas">- PIJAMAS -</h1>
-    <div class="produtos_box" >
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/60_Ideias_De_Mairla_Em_2021__A14-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/garotas_Conjunto_de_pijama_estampas_de_borboletas_tubulação_de_contraste-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/garotas_Conjunto_de_pijama_impressão_de_letras_tubulação_de_contraste_cetim-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Meninos_da_Criança_Conjunto_de_pijama_Padrão_de_urso_e_letra_Tubulação_de_contraste_Cetim-removebg-preview.png" alt=""></a></div>
     </div>
-
-    <br>
-
-    <h1 class=" tt" id="acessorios">- ACESSÓRIOS -</h1>
-    <div class="produtos_box" >
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Meninas_da_Criança_4_pares_meias_de_tripulação_Coelho___Padrão_de_Cenoura_Difuso-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Kit_3_Pares_Meias_Infantil_Estampada_Marisa-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Chapéu_balde_infantil_com_estampa_de_cereja-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Boné_de_beisebol_gráfico_de_desenho_animado_infantil-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/Óculos_de_sol_para_meninas_com_design_de_flores-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/42234b5f-e09f-4b03-a1ca-7addff64afd6-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/4pairs_Girls_Gamepad_Brincos-removebg-preview.png" alt=""></a></div>
-        <div class="produtos"><a href=""><img class="produtos_img" src="../photos/garotas_8_peças_Grampos_para_cabelo_decoração_de_arco-removebg-preview.png" alt=""></a></div>
-    </div>
-
-    <h1 class="tt" style="margin-top: 100px; margin-bottom: -50px;"><a href="#header" id="links">VOLTAR AO TOPO</a></h1>     <!--Intro Site-->
 
     <footer id="ft">
         <br><br><br>
@@ -99,7 +103,9 @@
         <br>
     </footer>
 
-    <script src="../script.js"></script>                       <!--Load_JS-->
+    <script src="../script.js">
+        
+    </script>                       <!--Load_JS-->
 </body>
 
 </html>

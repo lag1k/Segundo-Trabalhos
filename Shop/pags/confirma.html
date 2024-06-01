@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda Aqui</title>
+    <title>COMPRA FEITA</title>
     <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -43,55 +43,25 @@
 
     <br>
 
-    <h1 class=" tt">ADICIONE SUA ROUPINHA A VENDA AQUI: </h1>
-    <div id="formulario" class="item" style="font-size: 20px;">
+    <h1 class=" tt">Compra Realizada</h1>
+    <div id="formulario" class="item">
         <h2>Adicionar Nova Peça de Roupa</h2>
-        <form id="form-roupa" onsubmit="adicionarItem(event)">
+
+        <form id="form-roupa" style="display: flex; flex-direction: column; align-items: center;">
             
             <div class="item">
-                <label for="imagem"><b>Imagem:</b></label>
-                <input type="file" id="imagem" accept="image/*" required>
+                <img src="" alt="" id="imagem" > <br>
             </div>
     
             <div class="item">
-                <label for="titulo"><b>Título:</b></label>
-                <input type="text" id="titulo" required>
+                <p id="nome-produto"></p>
             </div>
     
-            <div class="item">
-                <label for="tamanho"><b>Tamanho:</b></label>
-                <input type="text" id="tamanho" required>
-            </div>
-    
-            <div class="item">
-                <label for="descricao"><b>Descrição:</b></label>
-                <textarea name="" id="descricao" required></textarea>
-            </div>
-    
-            <div class="item">
-                <label for="valor"><b>Valor:</b></label>
-                <input type="number" id="valor" required>
-            </div>
-
-            <div class="item">
-                <label for="lista"><b>Lista:</b></label>
-                <select id="lista" required>
-                    <option value="vestidos">Vestidos</option>
-                    <option value="conjuntos">Conjuntos</option>
-                    <option value="pijamas">Pijamas</option>
-                    <option value="acessorios">Acessórios</option>
-
-                    <!-- Adicione mais opções conforme necessário -->
-                </select>
-            </div>
-    
-            <button type="submit" class="button">Adicionar</button>
+            <h1>♡ SUA COMPRA FOI FINALIZADA ♡ </h1>
         </form>
     </div>
     
-    <div id="lista">
-        <!-- Os novos itens serão adicionados aqui -->
-    </div>
+    <h1 class="tt" style="margin-top: 50px; margin-bottom: -50px;"><a href="../pags/produtos.html" id="links">IR ÀS COMPRAS!</a></h1>     <!--Intro Site-->
 
     <footer id="ft">
         <br><br><br>

@@ -4,58 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de Cabeçalho</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon shortcut" href="../photos/DoolShop.png">
+    <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
 </head>
 
 <body>
 
-    <br id="header">
-    <header class="header">                             <!-- Cabeçario-->
-        <a href="../index.html"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
-        <div class="menu-toggle" id="menu-toggle">
-            <button>&#9776;</button>
+    <header class="header" id="false">                                     <!-- Cabeçario-->
+        <a href="../index.html" id="logo"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
+       
+    </header>
+
+    <header class="header" id="true">                                     <!-- Cabeçario-->
+        <button id="back-button" ><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>        
+        <div class="burger-icon">
+            <label class="burger" for="burger">
+              <input class="line" type="checkbox" id="burger" />
+            </label>
         </div>
     </header>
     
-    <div class="menu" id="menu">                        <!-- Menu lateral-->
-        <button id="close-menu">&times;</button>
+    <div class="menu" id="menu">                               <!--Menu lateral-->
         <br><br>
-    
-        <div class="search">
-            <input type="text" placeholder="Pesquisar...">
-            <button>Buscar</button>
-        </div> <br>
-    
         <a href="../index.html" class="menu_itens">Início</a>
         <a href="../pags/produtos.html" class="menu_itens">Produtos</a>
         <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
         <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
         <a href="../pags/add.html" class="menu_itens">Venda aqui</a>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button">Buscar</button>
+            <div id="search-results">
+                <!-- Aqui serão exibidos os resultados da pesquisa -->
+            </div>
+        </div>
     </div>
 
     <br>
 
     <h1 class=" tt">BEM-VINDO A NOSSA CASA DE BONECAS </h1>
     
-    <div id="user-info" class="info-container">
+    <div id="user-info" class="info-container" style="font-size: 20px;">
         <h2>Informações do Usuário</h2>
         <div class="info">
-            <label for="name">Nome:</label>
-            <p id="name">João da Silva</p>
+            <p id="name"><b>Nome:</b> Fulano de Tal da Silva</p>
         </div>
         <div class="info">
-            <label for="email">Email:</label>
-            <p id="email">joao.silva@email.com</p>
+            <p id="email"><b>Email:</b> fulaninho123@gmail.com</p>
         </div>
         <div class="info">
-            <label for="address">Endereço:</label>
-            <p id="address">Rua A, 123 - Bairro Central</p>
+            <p id="address"><b>Endereço:</b> Rua A, 123 - Bairro Santo</p>
         </div>
         <div class="info">
-            <label for="phone">Telefone:</label>
-            <p id="phone">(11) 91234-5678</p>
+            <p id="phone"><b>Telefone:</b> (11) 91234-5678</p>
         </div>
     </div>
 

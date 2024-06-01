@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda Aqui</title>
+    <title>Fazendo pedido</title>
     <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -43,56 +43,47 @@
 
     <br>
 
-    <h1 class=" tt">ADICIONE SUA ROUPINHA A VENDA AQUI: </h1>
-    <div id="formulario" class="item" style="font-size: 20px;">
+    <h1 class=" tt">Confirmando Compra</h1>
+    
+    <div id="formulario" class="item" onclick="adicionarItemAoCarrinho(item)">
         <h2>Adicionar Nova Peça de Roupa</h2>
-        <form id="form-roupa" onsubmit="adicionarItem(event)">
+
+        <form id="form-roupa" style="display: flex; flex-direction: column; align-items: center;">
             
             <div class="item">
-                <label for="imagem"><b>Imagem:</b></label>
-                <input type="file" id="imagem" accept="image/*" required>
+                <img src="" alt="" id="imagem" > <br>
             </div>
     
             <div class="item">
-                <label for="titulo"><b>Título:</b></label>
-                <input type="text" id="titulo" required>
+                <p id="nome-produto"></p>
             </div>
     
             <div class="item">
-                <label for="tamanho"><b>Tamanho:</b></label>
-                <input type="text" id="tamanho" required>
-            </div>
-    
-            <div class="item">
-                <label for="descricao"><b>Descrição:</b></label>
-                <textarea name="" id="descricao" required></textarea>
-            </div>
-    
-            <div class="item">
-                <label for="valor"><b>Valor:</b></label>
-                <input type="number" id="valor" required>
+                <p style="text-align: center;">AREA PARA TEXTO MAS DEIXADA ALTAMENTE PARA <br> ESCREVER QLQR COISA MERAMENTE PARA ILUSTRAÇÃO <br> MAS SERÁ ONDE FICA A DESCRIÇÃO, OBGD PELA COMPREENÇÃO.</p>
             </div>
 
             <div class="item">
-                <label for="lista"><b>Lista:</b></label>
-                <select id="lista" required>
-                    <option value="vestidos">Vestidos</option>
-                    <option value="conjuntos">Conjuntos</option>
-                    <option value="pijamas">Pijamas</option>
-                    <option value="acessorios">Acessórios</option>
-
-                    <!-- Adicione mais opções conforme necessário -->
+                <p id="valor">Valor: R$: 100,00</p>
+                
+            </div> <br>
+    
+            <div class="item">
+                <p>Tamanho:</p>
+                <select id="tamanho">
+                    <option value="PP">PP</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
                 </select>
-            </div>
-    
-            <button type="submit" class="button">Adicionar</button>
+            </div> <br>
+            <button type="submit" id="adicionar-ao-carrinho">Adicionar ao Carrinho</button> <!-- Botão de submissão -->
+            <br><br>
+            <a href="../pags/carrinho.html" class="button" id="addItemBtn" style="text-decoration: none;">Confirmar Compra</a>
+            <br>
         </form>
     </div>
     
-    <div id="lista">
-        <!-- Os novos itens serão adicionados aqui -->
-    </div>
-
     <footer id="ft">
         <br><br><br>
 
