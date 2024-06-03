@@ -82,7 +82,7 @@ body {
 .tt{
   text-align: center;
   font-family:cursive;
-  background-color: #fae6db;
+  background-color: #e7c48c;
   border: 2px black dashed;
   margin-bottom: 0px;
   width: 100%;
@@ -114,16 +114,16 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #fae6db;
+  background-color: #fad5d1;
   height: auto;
   width: 100%;
   position: relative; 
   z-index: 1; 
-  box-shadow: 0px 10px 10px #fae6db;
+  box-shadow: 0px 10px 10px #fad5d1;
 }
 
 #links{
-  color: #eeb5af;
+  color: #f5a8a0;
   text-decoration: none ;
   font-weight: bold;
 }
@@ -565,7 +565,7 @@ button {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #fae6db;
+  background-color: #fad5d1;
   border: 2px black dashed;
   height: auto;
   padding: 10px;
@@ -612,13 +612,14 @@ button {
 
 
 /*---------CODES PERFIL-------*/
+
 .info-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #e9e9e9;
+  background-color: #fad5d1;
   border: 2px black dashed;
   border-top: none;
   height: auto;
@@ -634,7 +635,7 @@ button {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #fae6db;
+  background-color: #fad5d1;
   border: 2px black dashed;
   border-top: none;
   height: auto;
