@@ -1,105 +1,92 @@
 /*---------CODES UNIVERSAIS-------*/
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    background-color: #dfa8a3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: snow;
 }
 
 .header {
-    background-color: #fae6db;
-    color: black;
-    font-size: 30px;
-    padding: 10px 20px;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border: 1.6px solid black;
-    top: 0;
-    margin-top: -25px;
-    margin-bottom: 55px;
-    box-sizing: border-box;
-    position: relative;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
-
-}
-
-#back-button{
-    background-color: transparent; 
-    border-radius: 50%; 
-    border: none;
-    padding: 0px;
-    cursor: pointer;
-    scale: 40%;
-    overflow: hidden;
-    display: flex;
-    margin-left: -100px;
+  background-color: #262626;
+  color: black;
+  font-size: 30px;
+  padding: 10px 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1.6px solid black;
+  top: 0;
+  margin-top: -25px;
+  margin-bottom: 155px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.479);
 }
 
 #false{
-    color: transparent;
-    background-color: transparent;
-    border: transparent;
+  color: transparent;
+  background-color: transparent;
+  border: transparent;
 }
 
 #false .logo_img{
-    display: none;
+  display: none;
 }
 
 #true{
-    position: fixed;
-    top: 25px;
-    z-index: 980;
+  position: fixed;
+  top: 25px;
+  z-index: 980;
 }
 
 .logo_img{
-    max-width: 55%;
+  border-radius: 100%;
+  height: 100px;
 }
 
 .nav {
-    display: flex;
+  display: flex;
 }
 
 .nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .search input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
 }
 
 .search button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #555;
-    color: #fff;
-    cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
 }
 
 .profile a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
 .tt{
-    text-align: center;
-    font-family:cursive;
-    background-color: #fae6db;
-    border: 2px black dashed;
-    margin-bottom: 0px;
-    width: 100%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
-
+  text-align: center;
+  font-family:cursive;
+  background-color: #fae6db;
+  border: 2px black dashed;
+  margin-bottom: 0px;
+  width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
 }
 
 .tt-1{
@@ -122,94 +109,109 @@ body {
 }
 
 .produtos_box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fae6db;
-    border: 2px black dashed;
-    height: auto;
-    width: 80%;
-    padding: 20px;
-    position: relative; 
-    z-index: 1; 
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fae6db;
+  height: auto;
+  width: 100%;
+  position: relative; 
+  z-index: 1; 
+  box-shadow: 0px 10px 10px #fae6db;
 }
 
 #links{
-    color: #f762ef;
-    text-decoration: none ;
-    font-weight: bold;
+  color: #eeb5af;
+  text-decoration: none ;
+  font-weight: bold;
 }
 
+#carrinho{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#adicionar-ao-carrinho{
+  text-decoration: none ;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px;
+  color: black;
+}
+
+#adicionar-ao-carrinho:hover{
+  animation: colorFlash 3s infinite;
+}
 #links:hover{
-    animation: colorFlash 3s infinite;
+  animation: colorFlash 3s infinite;
 }
 
 footer {
-    background-color: #fae6db;
-    color: black;
-    text-align: center;
-    width: 100%;    
-    margin-top: 80px;  
-    margin-bottom: -15px;
+  background-color: #fae6db;
+  box-shadow: 0px -10px 10px #fae6db;
+  color: black;
+  text-align: center;
+  width: 100%;    
+  margin-top: 80px;  
+  margin-bottom: -15px;
 }
 
 .ft-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }   
 
 .ft-img{
-    margin: 5px;
-    width: 50px;
-    height: 50px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
 }
 
 .button {
-    --bg: #000;
-    --hover-bg: #fae6db;
-    --hover-text: #000;
-    color: #fff;
-    cursor: pointer;
-    border: 1px solid var(--bg);
-    border-radius: 4px;
-    padding: 0.7em 2em;
-    background: var(--bg);
-    transition: 0.2s;
-  }
+  --bg: #000;
+  --hover-bg: #fae6db;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.7em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
   
 .button:hover {
-    color: var(--hover-text);
-    transform: translate(-0.25rem, -0.25rem);
-    background: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem var(--bg);
-  }
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
   
 .button:active {
-    transform: translate(0);
-    box-shadow: none;
-  }
+  transform: translate(0);
+  box-shadow: none;
+}
 
 .burger {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    cursor: pointer;
-    transition: 300ms;
-    border-radius: 10px;
-    position: fixed;
-    top: 30px;
-    right: 60px;
-    z-index: 1000;
-  }
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 10px;
+  position: absolute; /* Alterado para 'absolute' */
+  top: 45px;
+  right: 60px;
+  z-index: 1000;
+}
 
   .burger input[type="checkbox"] {
     appearance: none;
@@ -237,7 +239,7 @@ footer {
     width: 25px;
     height: 2.1px;
     display: block;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     position: absolute;
   }
@@ -270,7 +272,7 @@ footer {
     scale: 0.95;
   }
 
-  @keyframes animation1 {
+  @keyframes animation1 { /*---------ANIMAÇÃO DO BOTÃO BUGER-------*/
     0% {
       transform: translateY(8px) rotate(0deg);
     }
@@ -281,6 +283,7 @@ footer {
       transform: translateY(0px) rotate(45deg);
     }
   }
+
   @keyframes animation2 {
     0% {
       transform: translateY(-8px) rotate(0deg);
@@ -320,18 +323,18 @@ footer {
     animation: slideOut 0.5s forwards;
   }
   
-  @keyframes slideIn {
+  @keyframes slideIn { /*---------ANIMAÇÃO DO MENU-------*/
     0% {
       transform: translateY(-60%);
     }
     100% {
-      transform: translateY(30%);
+      transform: translateY(25%);
     }
   }
   
   @keyframes slideOut {
     0% {
-      transform: translateY(30%);
+      transform: translateY(25%);
     }
     100% {
       transform: translateY(-65%);
@@ -339,174 +342,245 @@ footer {
   }
   
 .menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    background-color: #fae6db;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 889;
-    text-align: right;
-    font-size: 20px;
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-color: #f1c0bc;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 889;
+  text-align: right;
+  font-size: 20px;
+}
  
 .menu a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    z-index: 1000;
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  z-index: 1000;
 }
 
 .info-content{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
 }
 
+.box-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  width: 100%;
+}
+
+.box-3{
+  width: auto;
+  margin: 20px;
+  text-align: center;
+}
+
+.fofo{
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  border: #f1c0bc 4px solid;
+  border-radius: 100%;
+  box-shadow: 8px 8px 10px #f1c0bc;
+}
+
+.espaço{
+  width: 90%;
+  height: auto;
+  margin: 50px 0% 0px 4%;
+  border: rgba(235, 182, 178, 0.555) 10px solid;
+  border-radius: 10px;
+  box-shadow: rgba(235, 182, 178, 0.63) 0px 10px 10px;
+}
+
+#anya{
+  margin-left: -300px;
+}
 /*---------CODES UNIVERSAIS-------*/
+
+
+
+
+
+
+
+
+
 
 
 /*---------CODES INICIO-------*/
 #div1{
-    border-bottom: none;
-    flex-direction: column;
+  border-bottom: none;
+  flex-direction: column;
 }
 
 #div2{
-    border: 2px black solid;
-    float: left; 
-    align-items: center; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    text-align: center; 
-    height: auto; 
-    width: 50%;
+  border: 2px black solid;
+  float: left; 
+  align-items: center; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  text-align: center; 
+  height: auto; 
+  width: 50%;
 }
 
 .box {
-    width: auto;
-    height: auto;
-    transition: .5s linear;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    padding: 5px;
-    text-align: center;
-    margin: 0 5px;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
-  
-  .box:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 100%;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(100%);
-  }
-  
-  .box:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(-100%);
-  }
-  
-  .box:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  .box:hover:before {
-    border-color: #262626;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .3s;
-  }
-  
-  .box:hover:after {
-    border-color: #262626;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .5s;
-  }
-  
-  button {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background: transparent;
-  }
+  width: auto;
+  height: auto;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
 /*---------CODES INICIO-------*/
 
 
-/*---------CODES PRODUTOS-------*/
 
-#produtos{
-    display:contents;
-    width: 50%;
+
+
+
+
+
+
+
+
+/*---------CODES PRODUTOS-------*/
+.nome_podutos{
+  text-decoration: none;
+  color: black;
 }
 
 .produtos{
-    width: auto;
-    height: auto;
+  width: 60%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: snow;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.548);
 }
 
 .produtos:hover {
-    animation: pulo 0.5s ease forwards; 
+  animation: pulo 0.5s ease forwards; 
 }
 
 .produtos_img{
-    scale: 60%;
-    width: auto;
+  width: 100%;
+  height: auto;
 }
-
 /*---------CODES PRODUTOS-------*/
 
 
-/*---------CODES VENDA AQUI-------*/
 
+
+
+
+
+
+
+
+
+/*---------CODES VENDA AQUI-------*/
 #formulario{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #e9e9e9;
-    border: 2px black dashed;
-    height: auto;
-    padding: 10px;
-    position: relative; /* Adicionando position:relative */
-    z-index: 1; /* Definindo z-index para os produtos */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fae6db;
+  border: 2px black dashed;
+  height: auto;
+  padding: 10px;
+  position: relative; /* Adicionando position:relative */
+  z-index: 1; /* Definindo z-index para os produtos */
 }
 
 .item {
-    margin-bottom: 10px;
-    width: auto;
+  margin-bottom: 10px;
+  width: auto;
 }
 
 .item img {
-    max-width: 300px;
-    max-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .item-lista{
@@ -516,194 +590,283 @@ footer {
   justify-content: space-between;
   padding: 20px;
 }
+
 .novo_img{
   width: 60%;
   height: auto;
 }
+
 .inv{
   display: none;
 }
 /*---------CODES VENDA AQUI-------*/
 
 
-/*---------CODES VENDA AQUI-------*/
+
+
+
+
+
+
+
+
+
+/*---------CODES PERFIL-------*/
 .info-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #e9e9e9;
-    border: 2px black dashed;
-    border-top: none;
-    height: auto;
-    padding: 20px;
-    position: relative; 
-    z-index: 1; 
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+  border: 2px black dashed;
+  border-top: none;
+  height: auto;
+  padding: 20px;
+  position: relative; 
+  z-index: 1; 
+  text-align: center;
 }
 
 .l-c-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e9e9e9;
-    border: 2px black dashed;
-    border-top: none;
-    height: auto;
-    padding: 10px;
-    position: relative; 
-    z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fae6db;
+  border: 2px black dashed;
+  border-top: none;
+  height: auto;
+  padding: 10px;
+  position: relative; 
+  z-index: 1; 
 }
 
 .info {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .info label {
-    font-weight: bold;
+  font-weight: bold;
 }
+/*---------CODES PERFIL-------*/
 
 
-/*---------CODES VENDA AQUI-------*/
+
+
+
+
+
+
+
 
 
 /*---------CODES CADASTRO/LOGIN-------*/
 #cad{
-    display: block;
-    font-size: 20px;
+  display: block;
+  font-size: 20px;
 }
 
 #log{
-    display: none;
-    font-size: 20px;
+  display: none;
+  font-size: 20px;
 }
 /*---------CODES CADASTRO/LOGIN-------*/
 
 
+
+
+
+
+
+
+
+
+
 /*---------CODES ANIMAÇÕES-------*/
-@keyframes colorFlash {
-    0% { color: #ff0000; }
-    20% { color: #00ff00; }
-    40% { color: #0000ff; }
-    60% { color: #ffff00; }
-    80% { color: #00ffff; }
-    100% { color: #ff00ff; }
+@keyframes colorFlash { /*---------ANIMAÇÃO DE PISCAR COLORIDO DOS LINKS-------*/
+  0% { color: #ff0000; }
+  20% { color: #00ff00; }
+  40% { color: #0000ff; }
+  60% { color: #ffff00; }
+  80% { color: #00ffff; }
+  100% { color: #ff00ff; }
 }
-@keyframes pulo {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
+
+@keyframes pulo { /*---------ANIMAÇÃO DE PULO DOS PRODUTOS-------*/
+
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
 /*---------CODES ANIMAÇÕES-------*/
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 890px) {  /*---------TROCA DE TAMANHO DE TELA (890)-------*/
   .tt-2{
     display: none;
   }
-}
+  
+  .menu{
+    padding-top: 100px;
+    font-size: 10;
+  }  
 
-@media screen and (max-width: 890px) {  /*---------TROCA DE TAMANHO DE TELA (890)-------*/  
-    .header {
-        margin-top: 65px;
-        margin-bottom: 60px;
-    }  
-    .menu{
-        padding-top: 100px;
-        font-size: 10;
-    }  
-    .tt{
-      font-size: 25px;
-      margin-left: -10px;
-    }
-    .burger {
-        position: absolute;
-        top: 30px;
-        right: 45px;
-    }
+  .tt{
+    font-size: 25px;
+    margin-left: -10px;
+  }
 
-    @keyframes slideIn {
-        0% {
-          transform: translateY(35%);
-        }
-        100% {
-          transform: translateY(40%);
-        }
+  .burger {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+  }
+
+  @keyframes slideIn {
+      0% {
+        transform: translateY(35%);
       }
-      
-      @keyframes slideOut {
-        0% {
-          transform: translateY(40%);
-        }
-        100% {
-          transform: translateY(35%);
-        }
+      100% {
+        transform: translateY(40%);
       }
-    
-    .menu{
-        height: auto;
-        padding: 20px;
-    }
-
-    .produtos_box{
-        width: 60%;
-        font-size: auto;
-    }
-
-    .produtos_img{
-        scale: 50%;
-    }
-    
-}
-
-@media screen and (max-width: 450px) {  /*---------TROCA DE TAMANHO DE TELA (450)-------*/
-    .logo_img{
-      scale: 70%;
-      margin-left: -80px;
-    }
-
-    .produtos_img{
-      width: 100%;
-    }
-
-    .l-c-container {
-      height: auto;
-      padding: 10px;
-      position: relative; 
-      z-index: 1; 
-      font-size: 15px;
-    }
-
-    .tt{
-      width: auto;
-      font-size: 20px;
-      margin-left: 1px;
-    }
-
-    .tt-1{
-      width: 100%;
-      font-size: 20px;
-      margin-left: 1px;
-    }
-
-    @keyframes slideIn {
-        0% {
-          transform: translateY(32%);
-        }
-        100% {
-          transform: translateY(35%);
-        }
     }
     
     @keyframes slideOut {
-        0% {
-          transform: translateY(35%);
-        }
-        100% {
-          transform: translateY(32%);
-        }
+      0% {
+        transform: translateY(40%);
+      }
+      100% {
+        transform: translateY(35%);
+      }
     }
+  
+  .menu{
+    height: auto;
+    padding: 20px;
+  }
 
+  .produtos_img{
+    scale: 50%;
+  }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 610px) {  /*---------TROCA DE TAMANHO DE TELA (610)-------*/
+  #anya{
+    scale: 90%;
+    margin-left: -280px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {  /*---------TROCA DE TAMANHO DE TELA (550)-------*/
+  #anya{
+    scale: 80%;
+    margin-left: -250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {  /*---------TROCA DE TAMANHO DE TELA (450)-------*/
+  .logo_img{
+    scale: 70%;
+  }
+
+  #anya{
+    scale: 60%;
+    margin-left: -200px;
+  }
+  .produtos_img{
+    width: 100%;
+  }
+
+  .l-c-container {
+    height: auto;
+    padding: 10px;
+    position: relative; 
+    z-index: 1; 
+    font-size: 15px;
+  }
+
+  .tt{
+    width: auto;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  .tt-1{
+    width: 100%;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  @keyframes slideIn {
+      0% {
+        transform: translateY(-60%);
+      }
+      100% {
+        transform: translateY(25%);
+      }
+  }
+  
+  @keyframes slideOut {
+      0% {
+        transform: translateY(-60%);
+      }
+      100% {
+        transform: translateY(-60%);
+      }
+  }
+
+  .box-2{
+    flex-direction: column;
+  }
+
+  #reverse{
+    flex-direction: column-reverse;
+  }
+
+  .fofo{
+    width: 80%;
+    height: 250px;
+  }
 }

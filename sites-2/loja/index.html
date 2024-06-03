@@ -5,24 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon shortcut" href="photos/DoolShop-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css"><!--LINK DO CSS-->
+    <link rel="icon shortcut" href="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg"><!--LINK DO ICON DO SITE-->
 </head>
 
 <body>
-
-    <p id="header"></p>
-    
-    <header class="header" id="false">                                     <!-- Cabeçario-->
+    <!-- CABEÇARIO FANTASMA-->
+    <header class="header" id="false">                                     
         <a href="index.html" id="logo"><img src="photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
-        
     </header>
-
-    <header class="header" id="true">                                     <!-- Cabeçario-->
-        <button id="back-button" ><img src="photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>
-        
-        <p class="tt-2">BEM-VINDO A NOSSA CASA DE BONECAS </p>
-
+    
+    <!-- CABEÇARIO DE VDD-->
+    <header class="header" id="true">                                   
+        <button id="back-button" ><img src="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg" alt="" class="logo_img"></button>
 
         <div class="burger-icon">
             <label class="burger" for="burger">
@@ -32,89 +27,111 @@
           
     </header>
     
-    
-    <div class="menu" id="menu">                               <!--Menu lateral-->
+    <!--MENU DO HAMBURGUER-->
+    <div class="menu" id="menu">                             
         <br><br>
+        <!--LINKS DAS PAGINAS-->
         <a href="index.html" class="menu_itens">Início</a>
+        <a href="pags/perfil.html" class="menu_itens">Perfil</a>        
         <a href="pags/produtos.html" class="menu_itens">Produtos</a>
-        <a href="pags/l-c.html" class="menu_itens">Login/Cadastro</a>
-        <a href="pags/perfil.html" class="menu_itens">Perfil</a>
+        <a href="pags/carrinho.html" class="menu_itens">Carrinho</a>
         <a href="pags/add.html" class="menu_itens">Venda aqui</a>
-        <a href="../../trb-2.html" style="color: black; text-decoration: none;">Sair</a>
+        <a href="pags/l-c.html" class="menu_itens">Login/Cadastro</a>
+        <a href="../../trb-2.html" class="menu_itens" >Sair</a>
+        <!--CAIXA DE PESQUISA-->
         <div class="search">
             <input type="text" id="search-input" placeholder="Pesquisar...">
             <button id="search-button">Buscar</button>
             <div id="search-results">
-                <!-- Aqui serão exibidos os resultados da pesquisa -->
             </div>
         </div>
     </div>
 
-    <br>
-
-         <!--Intro Site-->
-    <div class="info-content" style="font-size: 20px;">
-        <div class="produtos_box" id="div1">
-                <h1 style="font-size: 70px;">Doll House</h1> <hr style="width: 100%; margin-top: -40px; margin-bottom: 30px">
-                <p style="font-size: 20px;">Sua Loja Online de Roupas Infantis para Meninas. Encantando a Infância com Estilo </p><br>
-                <p style="text-align: justify; font-size: 20px;">
-                    A Doll House busca ser a marca preferida de roupas infantis para meninas, combinando moda, qualidade e conforto. <br> 
-                    Nossa visão é criar uma experiência de compra mágica tanto para as meninas quanto para seus pais, oferecendo peças que encantam e duram. <br> Nossa missão é trazer alegria e conforto às meninas através de roupas encantadoras e práticas. <br>
-                    Cada peça é cuidadosamente desenhada para refletir a personalidade e a imaginação das meninas, proporcionando uma combinação perfeita de estilo e funcionalidade. <br>
-                    Apenas Lembrando que nosso site é um site de encomenda, ou seja, nossa equipe irá eceber seu pedido e irá produzi-lo quando confirmado o pagamento. <br><br>
-                
-                    Caso queira voltar basta apertar na logo do site. <br>
-                    Para poder comprar em nosso site lembre-se de ir na aba de <a href="pags/l-c.html" id="links">Login/Cadastro</a> e entrar ou criar sua conta. <br>
-                    Se seu cadastro estiver feito de maneira correta vc ira para a aba de login e pós realizalo vc irá para o seu perfilcom suas informações. <br><br>
-                    <b>Público-Alvo:</b> Meninas de 0 a 5 anos.
-                    <br><br><br><br>        
-                </p>
-        </div>
-            <div class="produtos_box" style="border-top: 2px dashed #000; flex-direction: column;">
-                <h1>Categorias de Produtos:</h1><br><br> 
-                <div><a href="pags/produtos.html" id="links" class="box"><h3>Vestidos</h3></a><p>De festa, casuais e para ocasiões especiais, <br> sempre com designs únicos e materiais de alta qualidade.</p></div><br><br>
-                <div><a href="pags/produtos.html#conjuntos" id="links" class="box"><h3>Conjuntos:</h3></a><p>Looks completos para facilitar a escolha dos pais, <br> com combinações de peças que se complementam.</p></div><br><br>
-                <div><a href="pags/produtos.html#pijamas" id="links" class="box"><h3>Pijamas:</h3></a><p>Confortáveis e fofos, feitos <br> para garantir uma boa noite de sono.</p></div><br><br>
-                <div><a href="pags/produtos.html#acessorios" id="links" class="box"><h3>Acessórios:</h3></a><p>Tiaras, meias, bolsas e mais, <br> para completar o visual das pequenas.</p></div><br><br>
-                <div><a id="links" href="pags/produtos.html" style="font-size: 18px;" class="box"> → Aperte aqui ou nos nomes para ver os produtos. ←</a> <br><br><br>  </div>
-            </div>
-            <div class="produtos_box" style="flex-direction: column;">
-                <h1>Diferenciais dos Produtos:</h1><br><br> 
-                <div><h3>Design Exclusivo:</h3><p> Cada coleção é desenvolvida por designers talentosos, <br> trazendo tendências internacionais adaptadas ao universo infantil.</p></div><br><br>
-                <div><h3>Materiais de Qualidade:</h3><p>Usamos apenas tecidos confortáveis e duráveis, <br> garantindo que as roupas sejam agradáveis de usar e durem bastante.</p></div><br><br>
-                <div><h3>Conforto e Praticidade:</h3><p>Nossas peças são pensadas para permitir a <br> liberdade de movimento e a facilidade de vestir e cuidar.</p></div><br><br>
-                <div><h3>Produção:</h3><p>Cada peça é projetada com o cuidado do meio ambiente em mente, <br> utilizando materiais orgânicos e práticas de fabricação éticas.</p></div>
-            </div>
+    <!--COMEÇO DO CONTEUDO-->
+    <div class="info-content" id="div1">
+        <h1 style="font-size: 70px;">Anya Shop</h1> <hr style="width: 100%; margin-top: -40px; margin-bottom: 30px">
+        <div class="sketchfab-embed-wrapper" style="border: #f1c0bc 5px solid; box-shadow: 8px 8px 10px #f1c0bc;"> <iframe title="Anya Forger - Wakuwaku" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/b1b3cb154d63496facb53bda04db032a/embed?autospin=1&autostart=1&preload=1&ui_hint=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/anya-forger-wakuwaku-b1b3cb154d63496facb53bda04db032a?utm_medium=embed&utm_campaign=share-popup&utm_content=b1b3cb154d63496facb53bda04db032a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Anya Forger - Wakuwaku </a> by <a href="https://sketchfab.com/sy-kim?utm_medium=embed&utm_campaign=share-popup&utm_content=b1b3cb154d63496facb53bda04db032a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> sy-kim </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=b1b3cb154d63496facb53bda04db032a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>        <p style="text-align: justify; font-size: 20px;">
+            A Anya Shop busca ser a marca preferida de roupas infantis para meninas, combinando moda, qualidade e conforto. <br> 
+            Nossa visão é criar uma experiência de compra mágica tanto para as meninas quanto para seus pais, oferecendo peças que encantam e duram. <br> Nossa missão é trazer alegria e conforto às meninas através de roupas encantadoras e práticas. <br>
+            Cada peça é cuidadosamente desenhada para refletir a personalidade e a imaginação das meninas, proporcionando uma combinação perfeita de estilo e funcionalidade. <br>
+            Apenas Lembrando que nosso site é um site de encomenda, ou seja, nossa equipe irá eceber seu pedido e irá produzi-lo quando confirmado o pagamento. <br><br>
         
+            Caso queira voltar basta apertar na logo do site. <br>
+            Para poder comprar em nosso site lembre-se de ir na aba de <a href="pags/l-c.html" id="links">Login/Cadastro</a> e entrar ou criar sua conta. <br>
+            Se seu cadastro estiver feito de maneira correta vc ira para a aba de login e pós realizalo vc irá para o seu perfilcom suas informações. <br><br>
+            <b>Público-Alvo:</b> Meninas de 0 a 5 anos.
+            <br><br><br><br>        
+        </p>
+    </div>
+
+    <!--AREA DE LINKS-->
+    <div id="tbm n sei"> 
+        <div class="produtos_box" style="width: 100%;">
+            <h1>Categorias de Produtos:</h1><br><br> 
+           
+            <div class="box-2">
+                <img class="fofo" src="https://i.pinimg.com/236x/6a/fc/9a/6afc9a4fc00543885bcb48b6f7ccdc65.jpg" alt="">
+                <div class="box-3"><a href="pags/produtos.html" id="links" class="box"><h3>Vestidos</h3></a><p>De festa, casuais e para ocasiões especiais, <br> sempre com designs únicos e materiais de alta qualidade.</p></div><br><br>
+            </div>
+
+            <div class="box-2" id="reverse">
+                <div><a href="pags/produtos.html#conjuntos" id="links" class="box"><h3>Conjuntos:</h3></a><p>Looks completos para facilitar a escolha dos pais, <br> com combinações de peças que se complementam.</p></div><br><br>
+                <img class="fofo" src="https://i.pinimg.com/474x/72/5d/8d/725d8d499b2477a0407a4b91d41f65c3.jpg" alt="">
+            </div>
+
+            <div class="box-2">
+                <img class="fofo" src="https://i.pinimg.com/474x/4d/60/22/4d6022f5cc412add36b9a58604db7f99.jpg" alt="">
+                <div><a href="pags/produtos.html#pijamas" id="links" class="box"><h3>Pijamas:</h3></a><p>Confortáveis e fofos, feitos <br> para garantir uma boa noite de sono.</p></div><br><br>
+            </div>
+
+            <div class="box-2" id="reverse">
+                <div><a href="pags/produtos.html#acessorios" id="links" class="box"><h3>Acessórios:</h3></a><p>Tiaras, meias, bolsas e mais, <br> para completar o visual das pequenas.</p></div><br><br>
+                <img class="fofo" src="https://i.pinimg.com/236x/66/11/ad/6611ada851d4c4003862850e8ca643a9.jpg" alt="">
+            </div>
+
+            <img class="fofo" src="https://i.pinimg.com/originals/eb/88/42/eb884277a5fd501aacffcdd54b12200d.gif" alt="" style="margin-top:140px ;">
+            <div><a id="links" href="pags/produtos.html" style="font-size: 18px; color: black;" class="box"> → Aperte aqui ou nos nomes para ver os produtos. ←</a> <br><br><br>  </div>
+
+        </div>
+        <img class="espaço" src="https://i.pinimg.com/564x/eb/21/53/eb21532dc03c41961fc61e9b1c40f135.jpg" alt="">
+        
+        <!--DESCRIÇÃO-->
+        <div class="produtos_box" style="flex-direction: row; flex-wrap: nowrap; margin: 50px 0px; justify-content: space-evenly;">
+            <h1 >Diferenciais dos Produtos:</h1><br><br> 
+                <div style="display: flex; flex-direction: column; border-left: none">
+                    <div><h3>Design Exclusivo:</h3><p> Cada coleção é desenvolvida por designers talentosos, <br> trazendo tendências internacionais adaptadas ao universo infantil.</p></div><br><br>
+                    <div><h3>Materiais de Qualidade:</h3><p>Usamos apenas tecidos confortáveis e duráveis, <br> garantindo que as roupas sejam agradáveis de usar e durem bastante.</p></div><br><br>
+                    <div><h3>Conforto e Praticidade:</h3><p>Nossas peças são pensadas para permitir a <br> liberdade de movimento e a facilidade de vestir e cuidar.</p></div><br><br>
+                    <div><h3>Produção:</h3><p>Cada peça é projetada com o cuidado do meio ambiente em mente, <br> utilizando materiais orgânicos e práticas de fabricação éticas.</p></div>
+                </div>
+        </div>
 
         <div class="produtos_box">
-                <h1>Experiencia do Cliente:</h1><br><br>  
-                <p style="text-align: justify; font-size: 20px;">
-                    <b>Atendimento ao Cliente:</b> Oferecemos suporte via chat, e-mail e telefone para resolver qualquer dúvida ou problema rapidamente. <br><br>
-                    <b>Política de Devolução:</b> Facilitamos trocas e devoluções sem complicações, garantindo que os clientes fiquem completamente satisfeitos com suas compras. <br><br>
-                    <b>Embalagem:</b> Nossas embalagens são cuidadosamente preparadas para que cada entrega pareça um presente especial, encantando tanto as crianças quanto os pais. <br><br>
-                </p> 
+            <h1>Experiencia do Cliente:</h1><br><br>  
+            <p style="text-align: justify; font-size: 20px;">
+                <b>Atendimento ao Cliente:</b> Oferecemos suporte via chat, e-mail e telefone para resolver qualquer dúvida ou problema rapidamente. <br><br>
+                <b>Política de Devolução:</b> Facilitamos trocas e devoluções sem complicações, garantindo que os clientes fiquem completamente satisfeitos com suas compras. <br><br>
+                <b>Embalagem:</b> Nossas embalagens são cuidadosamente preparadas para que cada entrega pareça um presente especial, encantando tanto as crianças quanto os pais. <br><br>
+            </p> 
         </div>
     </div>
-    
+     <!--RODAPE-->
     <footer id="ft">
         <br><br><br>
-
         <div class="ft-line">
+            <!--CONTATOS-->
             <a href="https://github.com/lag1k" target="_blank"> <img src="photos/github.png" class="ft-img"></a>
             <a href="" target="_blank"> <img src="photos/whatsapp.png" class="ft-img"></a>
             <a href="https://www.instagram.com/gui1k_/" target="_blank"> <img src="photos/instagram.png" class="ft-img"></a>
             <a href="https://www.linkedin.com/in/guilherme-oliveira-da-silva-b54a90251/" target="_blank"> <img src="photos/linkedin.png" class="ft-img"></a>
         </div>
-
         <h4>(24)998688162 <br>
         go.silva190@gmail.com</h4>
-
         <p>&copy; 2024 Guilherme Oliveira - Todos os direitos reservados.</p>
         <br>
     </footer>
-
-    <script src="script.js"></script>                       <!--Load_JS-->
+    <!--LINK DO JAVA-->
+    <script src="script.js"></script>                      
 </body>
 
 </html>

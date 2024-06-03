@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-    <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
-    <link rel="stylesheet" href="../styles.css">
+    <title>Produtos</title><!--NOME DA ABA-->
+    <link rel="stylesheet" href="../styles.css"><!--LINK DO CSS-->
+    <link rel="icon shortcut" href="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg"> <!--LINK DO ICON-->
+
 </head>
 
 <body>
-
-    <header class="header" id="false">                                     <!-- Cabeçario-->
+    <!--CABEÇARIO FANTASMA-->
+    <header class="header" id="false">                                     
         <a href="../index.html" id="logo"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
         
     </header>
-
-    <header class="header" id="true">                                     <!-- Cabeçario-->
-        <button id="back-button" ><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>        
+    
+    <!--CABEÇARIO DE VERDADE-->
+    <header class="header" id="true">                                     
+        <button id="back-button" ><img src="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg" alt="" class="logo_img"></button>
         <div class="burger-icon">
             <label class="burger" for="burger">
               <input class="line" type="checkbox" id="burger" />
@@ -25,58 +27,65 @@
         </div>
     </header>
     
-    <div class="menu" id="menu">                               <!--Menu lateral-->
+    <!--MENU DO HAMBURGER-->
+    <div class="menu" id="menu">                       
         <br><br>
+        <!--LINKS DAS PAGINAS-->
         <a href="../index.html" class="menu_itens">Início</a>
+        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>        
         <a href="../pags/produtos.html" class="menu_itens">Produtos</a>
-        <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
-        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
+        <a href="../pags/carrinho.html" class="menu_itens">Carrinho</a>
         <a href="../pags/add.html" class="menu_itens">Venda aqui</a>
+        <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
+        <a href="../../../trb-2.html" class="menu_itens" >Sair</a>
+
+        <!--CAIXA DE PESQUISA-->
         <div class="search">
             <input type="text" id="search-input" placeholder="Pesquisar...">
             <button id="search-button">Buscar</button>
-            <div id="search-results">
-                <!-- Aqui serão exibidos os resultados da pesquisa -->
-            </div>
+            <div id="search-results"></div>
         </div>
     </div>
 
     <br>
 
-    
+    <!--COMEÇO DO CONTEUDO-->
     <h1 class="tt">Itens no Carrinho</h1>
-    <div class="produtos_box" style="flex-direction: column;">
+    <div class="produtos_box" id="carrinho" style="flex-direction: column;">
         <main>
+            <!--LISTA DO CARRINHO AONDE APARECEM OS ITENS ADICIONADOS (WIP)-->
             <ul id="carrinho">
-                <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
-                
+                <p style="height: 200px;"></p>
             </ul>
-            <br><br>
-            <button id="clear-cart" class="button">Limpar Carrinho</button> <!-- Botão para limpar o carrinho -->
-            <br><br>    
+            <br><br><br>
         </main>
+        <button id="clear-cart" class="button">Finalizar </button> <!--BOTAO QUE FINALIZA A COMPRA-->
+        <br>
+        <button id="clear-cart" class="button">Limpar </button> <!--BOTAO QUE LIMPA O CARRINHO-->  
+        <br>
     </div>
     
 
+    <!--RODAPE-->
     <footer id="ft">
         <br><br><br>
 
-        <div class="ft-line">
+        <!--CONTATOS-->
+        <div class="ft-line" >
             <a href="https://github.com/lag1k" target="_blank"> <img src="../photos/github.png" class="ft-img"></a>
             <a href="" target="_blank"> <img src="../photos/whatsapp.png" class="ft-img"></a>
             <a href="https://www.instagram.com/gui1k_/" target="_blank"> <img src="../photos/instagram.png" class="ft-img"></a>
             <a href="https://www.linkedin.com/in/guilherme-oliveira-da-silva-b54a90251/" target="_blank"> <img src="../photos/linkedin.png" class="ft-img"></a>
         </div>
-
         <h4>(24)998688162 <br>
         go.silva190@gmail.com</h4>
-
         <p>&copy; 2024 Guilherme Oliveira - Todos os direitos reservados.</p>
         <br>
     </footer>
 
-    <script src="../script.js"></script>   
-    <script src="../scripts/carrinho.js"></script>                    <!--Load_JS-->
+    <!--LINK DO JAVA-->
+    <script src="../script.js"></script>                       
 </body>
+
 
 </html>

@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazendo pedido</title>
-    <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
-    <link rel="stylesheet" href="../styles.css">
+    <title>Produtos</title><!--NOME DA ABA-->
+    <link rel="stylesheet" href="../styles.css"><!--LINK DO CSS-->
+    <link rel="icon shortcut" href="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg"> <!--LINK DO ICON-->
+
 </head>
 
 <body>
-
-    <header class="header" id="false">                                     <!-- Cabeçario-->
+    <!--CABEÇARIO FANTASMA-->
+    <header class="header" id="false">                                     
         <a href="../index.html" id="logo"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
         
     </header>
-
-    <header class="header" id="true">                                     <!-- Cabeçario-->
-        <button id="back-button" ><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>        
+    
+    <!--CABEÇARIO DE VERDADE-->
+    <header class="header" id="true">                                     
+        <button id="back-button" ><img src="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg" alt="" class="logo_img"></button>
         <div class="burger-icon">
             <label class="burger" for="burger">
               <input class="line" type="checkbox" id="burger" />
@@ -25,49 +27,52 @@
         </div>
     </header>
     
-    <div class="menu" id="menu">                               <!--Menu lateral-->
+    <!--MENU DO HAMBURGER-->
+    <div class="menu" id="menu">                       
         <br><br>
+        <!--LINKS DAS PAGINAS-->
         <a href="../index.html" class="menu_itens">Início</a>
+        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>        
         <a href="../pags/produtos.html" class="menu_itens">Produtos</a>
-        <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
-        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
+        <a href="../pags/carrinho.html" class="menu_itens">Carrinho</a>
         <a href="../pags/add.html" class="menu_itens">Venda aqui</a>
+        <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
+        <a href="../../../trb-2.html" class="menu_itens" >Sair</a>
+
+        <!--CAIXA DE PESQUISA-->
         <div class="search">
             <input type="text" id="search-input" placeholder="Pesquisar...">
             <button id="search-button">Buscar</button>
-            <div id="search-results">
-                <!-- Aqui serão exibidos os resultados da pesquisa -->
-            </div>
+            <div id="search-results"></div>
         </div>
     </div>
 
     <br>
-
+    <!--COMEÇO DO CONTEUDO-->
     <h1 class=" tt">Confirmando Compra</h1>
-    
+    <!--FORMULÁRIO QUE MOSTRA OS DADOS DO ITEM SELECIONADO E COLETA O TAMANHO-->
     <div id="formulario" class="item" onclick="adicionarItemAoCarrinho(item)">
         <h2>Adicionar Nova Peça de Roupa</h2>
-
         <form id="form-roupa" style="display: flex; flex-direction: column; align-items: center;">
             
-            <div class="item">
+            <div class="item"><!--MOSTRA A IMAGEM-->
                 <img src="" alt="" id="imagem" > <br>
             </div>
     
-            <div class="item">
+            <div class="item"><!--MOSTRA O NOME DO ITEM-->
                 <p id="nome-produto"></p>
             </div>
     
-            <div class="item">
+            <div class="item"><!--MOSTRA A DESCRIÇÃO(AQUI ESTÁ APENAS UM EXEMPLO)-->
                 <p style="text-align: center;">AREA PARA TEXTO MAS DEIXADA ALTAMENTE PARA <br> ESCREVER QLQR COISA MERAMENTE PARA ILUSTRAÇÃO <br> MAS SERÁ ONDE FICA A DESCRIÇÃO, OBGD PELA COMPREENÇÃO.</p>
             </div>
 
-            <div class="item">
+            <div class="item"><!--MOSTRA O VALOR(ILUSTRATIVO)-->
                 <p id="valor">Valor: R$: 100,00</p>
                 
             </div> <br>
     
-            <div class="item">
+            <div class="item"> <!--CAIXA DE SELEÇÃO DE TAMANHO-->
                 <p>Tamanho:</p>
                 <select id="tamanho">
                     <option value="PP">PP</option>
@@ -77,32 +82,30 @@
                     <option value="GG">GG</option>
                 </select>
             </div> <br>
-            <button type="submit" id="adicionar-ao-carrinho">Adicionar ao Carrinho</button> <!-- Botão de submissão -->
+            <a href="../pags/confirma.html" id="adicionar-ao-carrinho">Adicionar ao Carrinho</a> <!--BOTÃO DE DISPARO DA FUNÇÃO(ILUSTRATIVO)-->
             <br><br>
-            <a href="../pags/carrinho.html" class="button" id="addItemBtn" style="text-decoration: none;">Confirmar Compra</a>
-            <br>
         </form>
     </div>
     
+    <!--RODAPE-->
     <footer id="ft">
         <br><br><br>
 
+        <!--CONTATOS-->
         <div class="ft-line">
             <a href="https://github.com/lag1k" target="_blank"> <img src="../photos/github.png" class="ft-img"></a>
             <a href="" target="_blank"> <img src="../photos/whatsapp.png" class="ft-img"></a>
             <a href="https://www.instagram.com/gui1k_/" target="_blank"> <img src="../photos/instagram.png" class="ft-img"></a>
             <a href="https://www.linkedin.com/in/guilherme-oliveira-da-silva-b54a90251/" target="_blank"> <img src="../photos/linkedin.png" class="ft-img"></a>
         </div>
-
         <h4>(24)998688162 <br>
         go.silva190@gmail.com</h4>
-
         <p>&copy; 2024 Guilherme Oliveira - Todos os direitos reservados.</p>
         <br>
     </footer>
 
-    <script src="../script.js"></script>                       <!--Load_JS-->
-    <script src="../scripts/fazendo-pedido.js"></script>
+    <!--LINK DO JAVA-->
+    <script src="../script.js"></script>                       
 </body>
 
 </html>

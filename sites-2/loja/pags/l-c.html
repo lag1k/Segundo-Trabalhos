@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Cadastro</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon shortcut" href="../photos/DoolShop-removebg-preview.png">
+    <title>Produtos</title><!--NOME DA ABA-->
+    <link rel="stylesheet" href="../styles.css"><!--LINK DO CSS-->
+    <link rel="icon shortcut" href="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg"> <!--LINK DO ICON-->
+
 </head>
 
 <body>
-
-    <header class="header" id="false">                                     <!-- Cabeçario-->
+    <!--CABEÇARIO FANTASMA-->
+    <header class="header" id="false">                                     
         <a href="../index.html" id="logo"><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></a>
         
     </header>
-
-    <header class="header" id="true">                                     <!-- Cabeçario-->
-        <button id="back-button" ><img src="../photos/DoolShop-removebg-preview.png" alt="" class="logo_img"></button>        
+    
+    <!--CABEÇARIO DE VERDADE-->
+    <header class="header" id="true">                                     
+        <button id="back-button" ><img src="https://i.pinimg.com/564x/da/39/be/da39be2e8659b716a3cb77af2533712e.jpg" alt="" class="logo_img"></button>
         <div class="burger-icon">
             <label class="burger" for="burger">
               <input class="line" type="checkbox" id="burger" />
@@ -25,97 +27,103 @@
         </div>
     </header>
     
-    <div class="menu" id="menu">                               <!--Menu lateral-->
+    <!--MENU DO HAMBURGER-->
+    <div class="menu" id="menu">                       
         <br><br>
+        <!--LINKS DAS PAGINAS-->
         <a href="../index.html" class="menu_itens">Início</a>
+        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>        
         <a href="../pags/produtos.html" class="menu_itens">Produtos</a>
-        <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
-        <a href="../pags/perfil.html" class="menu_itens">Perfil</a>
+        <a href="../pags/carrinho.html" class="menu_itens">Carrinho</a>
         <a href="../pags/add.html" class="menu_itens">Venda aqui</a>
+        <a href="../pags/l-c.html" class="menu_itens">Login/Cadastro</a>
+        <a href="../../../trb-2.html" class="menu_itens" >Sair</a>
+
+        <!--CAIXA DE PESQUISA-->
         <div class="search">
             <input type="text" id="search-input" placeholder="Pesquisar...">
             <button id="search-button">Buscar</button>
-            <div id="search-results">
-                <!-- Aqui serão exibidos os resultados da pesquisa -->
-            </div>
+            <div id="search-results"></div>
         </div>
     </div>
 
     <br>
-
+    <!--COMEÇO DO CONTEUDO-->
+    <!--FORMULARIO DE CADASTRO-->
     <div id="cad">
         <h1 class=" tt">FAÇA SEU CADASTRO </h1>
         <div id="user-info" class="l-c-container">
             <h2>Informações do Usuário</h2>
-            <div class="info">
+            <div class="info"><!--COLETA NOME-->
                 <label for="name">Nome:</label>
                 <input type="text" id="name">
             </div>
-            <div class="info">
+            <div class="info"><!--COLETA EMAIL-->
                 <label for="email">Email:</label>
                 <input type="text" id="email">
             </div>
-            <div class="info">
+            <div class="info"><!--COLETA SENHA-->
                 <label for="email">Senha:</label>
                 <input type="text" id="email">
             </div>
-            <div class="info" style="margin-left: -20px;">
+            <div class="info" style="margin-left: -20px;"><!--COLETA ENDEREÇO-->
                 <label for="address">Endereço:</label>
                 <input type="text" id="address">
             </div>
-            <div class="info" style="margin-left: -15px;">
+            <div class="info" style="margin-left: -15px;"><!--COLETA TELEFONE-->
                 <label for="phone">Telefone:</label>
                 <input type="text" id="phone">
             </div> <br>
-            <button class="button" id="troca" style="font-size: 16px;">Registrar</button>
+            <button class="button" id="troca" style="font-size: 16px;">Registrar</button><!--BOTÃO DE DISPARO DA FUNÇÃO-->
 
             <br>
             <h4>Já tem conta? Faça seu login.</h4>
-            <button class="button" id="troca" style="font-size: 16px;">Login</button>
+            <button class="button" id="troca" style="font-size: 16px;">Login</button><!--TROCA ENTRE LOGIN E CADASTRO-->
             <br><br>
         </div>
     </div>
 
+    <!--FORMULARIO DE LOGIN-->
     <div id="log">
         <h1 class=" tt">FAÇA SEU LOGIN </h1>
         <div id="user-info" class="l-c-container">
             <h2>Informações do Usuário</h2>
-            <div class="info">
+            <div class="info"><!--COLETA EMAIL-->
                 <label for="email">Email:</label>
                 <input type="text" id="email">
             </div>
-            <div class="info">
+            <div class="info"><!--COLETA SENHA-->
                 <label for="email">Senha:</label>
                 <input type="text" id="email">
             </div><br>
-            <a href="../pags/perfil.html"><button class="button" style="font-size: 16px;">Entrar</button></a>
+            <a href="../pags/perfil.html"><button class="button" style="font-size: 16px;">Entrar</button></a><!--DISPARA A FUNÇÃO DO FOMRULARIO(NESSE CASO ELE PULA PRA OUTRA PAG PRA SIMULAR LOGIN)-->
 
             <br>
             <h4>Ainda não tem conta? Faça seu Cadastro.</h4>
-            <button  class="button" id="troca" style="font-size: 16px;">Registro</button>
+            <button  class="button" id="troca" style="font-size: 16px;">Registro</button><!--TROCA ENTRE LOGIN E CADASTRO-->
             <br><br>
         </div>
     </div>
 
+    <!--RODAPE-->
     <footer id="ft">
         <br><br><br>
 
+        <!--CONTATOS-->
         <div class="ft-line">
             <a href="https://github.com/lag1k" target="_blank"> <img src="../photos/github.png" class="ft-img"></a>
             <a href="" target="_blank"> <img src="../photos/whatsapp.png" class="ft-img"></a>
             <a href="https://www.instagram.com/gui1k_/" target="_blank"> <img src="../photos/instagram.png" class="ft-img"></a>
             <a href="https://www.linkedin.com/in/guilherme-oliveira-da-silva-b54a90251/" target="_blank"> <img src="../photos/linkedin.png" class="ft-img"></a>
         </div>
-
         <h4>(24)998688162 <br>
         go.silva190@gmail.com</h4>
-
         <p>&copy; 2024 Guilherme Oliveira - Todos os direitos reservados.</p>
         <br>
     </footer>
 
-    <script src="../script.js"></script>
-    <script src="../scripts/login-cadastro.js"></script>
+    <!--LINK DO JAVA-->
+    <script src="../script.js"></script>                       
 </body>
 
 </html>
