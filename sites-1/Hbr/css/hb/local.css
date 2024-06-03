@@ -1,0 +1,168 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: darkred;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px; 
+    z-index: 1000; 
+}
+
+#img-hd{
+    scale: 10%;
+    margin: -10%;
+}
+#link-hd{
+    color: white;
+    font-size: 350%;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #b4b4b4;
+    background-image: url(https://i.pinimg.com/564x/3f/45/66/3f4566143f350be5101ea7ee3123edc2.jpg);
+
+}
+.navbar {
+    position: fixed;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    background-color: yellow;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; 
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-list li {
+    margin-right: 20px;
+}
+.nav-list li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.nav-list li a:hover {
+    animation: blink 1s infinite;
+}
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.dv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.dv1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #b4b4b4;
+    width: 60%;
+    font-size: 200%;
+    text-align: justify;
+    padding: 55px;
+    margin-top: 50px;
+    box-shadow: 0px 5px 12px black;
+    border-radius: 50px;
+}
+#img{
+    box-shadow: 0px 5px 12px black;
+    border: solid 4px yellow; 
+    border-radius: 50px;
+}
+#link-dv{
+    background-color: darkred;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: solid 4px yellow;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px black;
+}
+#link{
+    color: yellow;
+    text-decoration: none;
+}
+#link:hover{
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% {color: gray;}
+    10% { color: blue; } 
+    25% {color: purple;}
+    50% { color: green; } 
+    75% {color: red;}
+    100% { color: gray; } 
+}
+
+@media only screen and (max-width: 1920px) {
+    body{
+       zoom: 75%;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    body{
+        zoom: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 10px; 
+    }
+    header {
+        height: 70px; 
+        padding: 10px; 
+    }
+    #img-hd{
+        margin-left: -150px;
+        margin-right: -150px;
+        width: 100%; 
+        height: auto; 
+    }
+    #link-hd{
+        font-size: 200%;
+    }
+    .dv{
+    margin-top: 25%;
+    }
+    .navbar {
+        top: 80px; 
+        padding: 10px; 
+    }
+    #dc-tt {
+        font-size: 40px;
+    }
+
+    #img{
+        scale: 50%;
+        margin-top: -100px;
+        margin-bottom: -75px;
+    }
+    
+}

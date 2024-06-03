@@ -1,0 +1,525 @@
+html{
+    scroll-behavior: smooth;
+    font-family: monospace;
+}
+
+.Colun {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 40px;
+    
+}
+
+.Line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body{
+    background-repeat:repeat-y;
+    background-position: center top;
+    background-size: 100%; 
+    width: 100%;
+    zoom: 75%;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#head{
+    background-color: black;
+    width: 100%;
+    height: 100;
+    padding: 1px;
+    margin: -10px;
+    z-index: 1000;
+    position: fixed;
+}
+.head_display {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.562);
+    
+}
+#head_txt{
+    color: red;
+    font-size: 50px;
+    text-align:center;
+    padding: 15px;
+    margin: 15px;
+    
+}
+#head_txt_2{
+    color: red;
+    font-size: 20px;
+    text-align:center;
+    
+}
+#head_line{ 
+    border-color: red;
+}
+#head_links{
+    color: red;
+    margin: 5px;
+    font-size: 25px;
+}
+#head_links:hover{
+    animation: piscar 1s infinite alternate; /* Aplicando a animação */
+  }
+#icon_c{
+    scale: 30%;
+    position:  flex;
+    margin-top: -100px;
+    margin-right: -140px;
+    margin-left: -120px;
+}
+
+.bio_colun {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 40px; 
+}
+#bio{
+    margin: 30px;
+    width: 90%;
+    height: 650px;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;  
+}
+#bio_tt{
+    color: white;
+    font-size: 80px;
+    font-size: bold;
+    font-style: italic;
+    text-shadow: 1px 1.5px 2px white;
+    text-decoration: underline;
+    margin-bottom: -50px;
+}
+#bio_photo{
+    scale: 90%;
+    margin: 30px;
+    width: 600px;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.678);
+    
+}
+.bio_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center; 
+}
+
+.disc_colun {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 90%;
+    margin: 10px;
+    margin-bottom: -100px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 40px;
+}
+#disc_tt{
+    color: white;
+    font-size: 40px;
+    font-size: bold;
+    font-style: italic;
+    text-shadow: 1px 1.5px 2px white;
+    text-decoration: underline;
+    margin-bottom: -10px;
+}
+.disc_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 350px;
+    margin: 30px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 40px;
+}
+#album_photo{
+    scale: 100%;
+    margin: 30px;
+    width: 150px;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.678);
+}
+#album_tt{
+    color: white;
+    font-size: 20px;
+    font-size: bold;
+    font-style: italic;
+    text-shadow: 1px 1.5px 2px white;
+    margin-top: -20px;
+    text-align: center;
+}
+#album_txt{
+    margin-top: -50px;
+    margin-bottom: 30px;
+    width: 1250px;
+    color: white;
+    font-size: 25px;
+    font-size: bold;
+    font-style: italic;
+    text-shadow: 1px 1.5px 2px white;
+    text-align: justify;
+}
+#album_links{
+    color: red;
+    text-shadow: none;
+    margin-left: -2px;
+}
+#album_links:hover{
+    animation: piscar 1s infinite alternate; /* Aplicando a animação */
+  }
+@keyframes piscar {
+    0% {
+      color: red; /* Início da animação: vermelho */
+    }
+    25% {
+      color: blue; /* 25% do tempo: azul */
+    }
+    50% {
+      color: green; /* 50% do tempo: verde */
+    }
+    75% {
+      color: yellow; /* 75% do tempo: amarelo */
+    }
+    100% {
+      color: red; /* 100% do tempo: vermelho novamente */
+    }
+}
+
+.video_colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: 10px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 40px; 
+}
+.video_colum_c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    width: 90%;
+    margin: 10px;
+    margin-bottom: -50px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 40px; 
+}
+.video_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin: 30px;
+    margin-bottom: 100px;
+    border-radius: 40px;
+}
+#video_tt{
+    color: white;
+    font-size: 40px;
+    font-size: bold;
+    font-style: italic;
+    text-shadow: 1px 1.5px 2px white;
+    text-decoration: underline;
+    margin-bottom: -10px;
+}
+#video_txt{
+    margin-left: -250px;
+    width: 400px;
+    height: 465px;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;  
+}
+#video_txt2{
+    margin-left: -250px;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;  
+}
+#video_txt3{
+    margin-left: -250px;
+    width: 400px;
+    height: 615px;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;  
+}
+#video_txt4{
+    margin-left: -250px; 
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;   
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-size: 23px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;  
+}
+
+.turne_display{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;   
+}
+.turne{   
+    background-color: rgba(0, 0, 0, 0.500);
+    margin-bottom: -100px;
+    text-align: center;
+    border-radius: 25px;
+    width: 100%;
+}
+
+#turne_tt{
+    color: white;
+    font-size: 40px;
+    font-size: bold;
+    font-style: italic;
+    text-shadow: 1px 1.5px 2px white;
+    text-decoration: underline;
+    margin-bottom: -150px;
+}
+
+#turne_img{
+    scale: 80%;
+    margin-bottom: -50px;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;    
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    height: 100;
+    margin: -10px;
+    
+}
+#rodape_tt{
+    color: red;
+    font-size: 40px;
+    text-decoration: underline ;
+}
+#rodape_txt{
+    color: red;
+    font-size: 20px;
+}
+#rodape_txt2{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#rodape_link{
+    text-decoration: none;
+    color: red;
+}
+#rodape_link:hover{
+    animation: piscar 1s infinite alternate; /* Aplicando a animação */
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #head{
+        height: 200px;
+    }
+    #head_line{
+        margin-bottom: 30px;
+    }
+    #head_links{
+        font-size: 45px;
+    }
+    body{
+        background-size: 120%;
+    }
+    .bio_colun{
+        height: 2500px;
+        justify-content: flex-start;
+    }
+    #bio_tt{
+        margin-top: 100px;
+    }
+    .bio_line{
+        flex-direction: column;
+    }
+    #bio{
+        height: 900px;
+        margin-top: 100px;
+        font-size: 35px;
+    }
+    #bio_photo{
+        width: 1100px;
+        height: 1200px;
+    }
+    .disc_colun{
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .album{
+        width: 400px;
+        height: 600px;
+    }
+    #album_txt{
+        font-size: 40px;
+        width: 1000px;
+    }
+    #album_photo{
+        scale: 200%;
+    }
+    #album_tt{
+        font-size: 40px;
+    }
+    
+    .video_colum{
+        height: 800px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .video_line{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #video_tt{
+        margin-left: 50px;
+    }
+    #video_txt{
+        display: none;
+        width: 800px;
+        margin-left: 5px;
+        font-size: 40px;
+    }
+    #video_txt2{
+        display: none;
+        width: 800px;
+        margin-left: 5px;
+        font-size: 40px;
+        height: 500px;
+    }
+    #video_txt3{
+        display: none;
+        width: 800px;
+        margin-left: 5px;
+        font-size: 40px;
+        height: 500px;
+    }
+    #video_txt4{
+        display: none;
+        width: 1000px;
+        height: 1600px;
+        margin-left: 5px;
+        font-size: 40px;
+        height: 500px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .video_colum_c{
+        height: 800px;
+        margin-bottom: 10px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    #img{
+        margin-bottom: 100px;
+        scale: 150%;
+    }
+    .rodape{
+        width: 101%;
+        margin-left: -15px;
+        margin-top: 100px;
+    }
+}

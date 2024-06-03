@@ -1,0 +1,186 @@
+body{
+    zoom: 150%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: auto;
+
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 10px black;
+}
+#links{
+    color: darkslategrey;
+    text-shadow: none;
+    margin-left: -2px;
+}
+#links:hover{
+    animation: piscar 1s infinite alternate; /* Aplicando a animação */
+  }
+@keyframes piscar {
+    0% {
+      color: red; /* Início da animação: vermelho */
+    }
+    25% {
+      color: blue; /* 25% do tempo: azul */
+    }
+    50% {
+      color: green; /* 50% do tempo: verde */
+    }
+    75% {
+      color: yellow; /* 75% do tempo: amarelo */
+    }
+    100% {
+      color: red; /* 100% do tempo: vermelho novamente */
+    }
+}
+/*CABEÇA*/
+.bloco-1{
+    margin-top: 20px;
+    width: 90%;
+    border: 2px solid black;
+    padding: 25px;
+    height: 400px;
+    border-radius: 5px;
+}
+.nome{
+    float: left;
+    width: 80%;
+    text-align: center;
+    font-size: 70px;
+    font-family:sans-serif;
+    margin-top: 100px;
+    margin-left: -30px;
+
+}
+img{
+    scale: 150%;
+    width: auto;
+    float: right;  
+    margin-top: 50px;   
+    margin-right: 30px;
+    border-radius: 5px;
+}
+.contatos{
+    float: right;
+    width: auto;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+
+/*CAIXAS*/
+.bloco-2{
+    width: 90%;
+}
+.bloco-3{
+    width: 90%;
+}
+.bloco-4{
+    width: 90%;
+}
+.bloco-5{
+    width: 90%;
+}
+.bloco-6{
+    width: 90%;
+}
+.bloco-7{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/*TEXTO*/
+.title{
+    margin: auto;
+    width: auto;
+    font-size: 30px;
+    font-family:monospace;
+    font-weight: bold;
+}
+.linha{
+    border-width: 2px;
+    border-color: black;
+}
+.linha2{
+    border-width: 1px;
+    border-color: gray;
+}
+.text1{
+    margin: auto;
+    width: auto;
+    font: arial;
+    font-size: 20px;
+}
+.text2{
+    margin: auto;
+    width: auto;
+    font: arial;
+    font-size: small;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px cyan;
+    text-align: right;
+}
+
+
+/*CELULAR*/
+@media only screen and (max-width: 1000px) {
+
+    body{
+        width: 90%;
+        zoom: 130%;
+        background-position: center;
+        background-size: 300%;
+        background-attachment:local;
+        background-repeat: repeat-y;
+    }
+
+    .bloco-1{
+        width: 90%;
+        height: 600px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    img{
+        scale: 200%;
+        width: auto;
+        float: right;  
+        margin-top: -350px;   
+        margin-right: 65px;
+        border-radius: 5px;
+    }
+    .nome{
+        font-size: 75px;
+        text-align: left;
+        margin-top: 100px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 0px;
+    }
+    .contatos{
+        float: right;
+        text-align: right;
+        font-size: 40px;
+        margin-top: -90px;    
+    }
+
+    .title{
+        width: 100%;
+        font-size: 50px;
+        font-family: none;
+    }
+    .linha{
+        border-width: 8px;
+    }
+    .linha2{
+        border-width: 4px;
+        border-color: gray;
+    }
+    .text1{
+        font-size: 35px;
+    }
+    
+
+}
