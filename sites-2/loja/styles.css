@@ -795,19 +795,6 @@ button {
     scale: 80%;
     margin-left: -250px;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 450px) {  /*---------TROCA DE TAMANHO DE TELA (450)-------*/
   .logo_img{
     scale: 70%;
   }
